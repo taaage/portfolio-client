@@ -1,0 +1,22 @@
+.menu-container {
+  display: flex;
+  justify-content: center;
+  column-gap: 50px;
+}
+
+.menu-item {
+  margin-top: 25px;
+}
+
+.menu-item-text {
+  color: white;
+}
+
+.menu-item-text:hover {
+  color: #4fb9af;
+  cursor: pointer;
+}
+
+.menu-item-number {
+  color: #4fb9af;
+}
