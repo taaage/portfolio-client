@@ -1,0 +1,29 @@
+.home-content-container {
+  margin-left: 200px;
+  margin-right: 100px;
+  margin-top: 100px;
+}
+
+.home-content-row-container-two {
+  height: 20px;
+}
+
+.home-content-row-container-three {
+  height: 80px;
+}
+
+.home-content-row-one {
+  color: #36d3c3;
+}
+.home-content-row-two {
+  font-size: 60px;
+  letter-spacing: 2px;
+  color: #e3c5fe;
+  font-family: "Coolvetica";
+}
+.home-content-row-three {
+  font-size: 60px;
+  letter-spacing: 2px;
+  color: #cbc3e3;
+  font-family: "Coolvetica";
+}

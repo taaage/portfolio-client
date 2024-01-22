@@ -1,6 +1,7 @@
 .menu-container {
   display: flex;
-  justify-content: center;
+  justify-content: right;
+  margin-right: 100px;
   column-gap: 50px;
 }
 
@@ -18,5 +19,5 @@
 }
 
 .menu-item-number {
-  color: #4fb9af;
+  color: #36d3c3;
 }
