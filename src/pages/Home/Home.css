@@ -1,29 +1,58 @@
 .home-content-container {
-  margin-left: 200px;
-  margin-right: 100px;
-  margin-top: 100px;
+  padding-top: 4em;
+  display: flex;
+  flex-direction: column;
+  margin-left: 4em;
+  margin-right: 4em;
 }
-
-.home-content-row-container-two {
-  height: 20px;
-}
-
-.home-content-row-container-three {
-  height: 80px;
-}
-
 .home-content-row-one {
   color: #36d3c3;
 }
 .home-content-row-two {
-  font-size: 60px;
-  letter-spacing: 2px;
-  color: #e3c5fe;
+  font-size: min(6vw, 6em);
+  letter-spacing: 0.025em;
+  color: #d1a2f9;
   font-family: "Coolvetica";
+  margin: 0em;
 }
+
 .home-content-row-three {
-  font-size: 60px;
-  letter-spacing: 2px;
-  color: #cbc3e3;
+  font-size: min(6vw, 6em);
+  letter-spacing: 0.025em;
+  color: #cecdcd;
   font-family: "Coolvetica";
+  margin: 0em;
+}
+
+.ericsson-text {
+  text-decoration: none;
+}
+.ericsson-text:hover {
+  cursor: pointer;
+  color: red;
+}
+
+.github-button {
+  width: 8em;
+  height: 2em;
+  border-radius: 0.5em;
+  background-color: #071630;
+  border: 1px solid #36d3c3;
+  color: white;
+  font-family: "Consonlas";
+}
+
+.github-button:hover {
+  cursor: pointer;
+  border: 1px solid red;
+}
+
+@media screen and (max-width: 480px) {
+  .home-content-container {
+    align-items: center;
+  }
+
+  .home-content-row-four {
+    text-align: center;
+  }
 }
