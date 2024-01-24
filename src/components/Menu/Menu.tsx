@@ -8,7 +8,7 @@ const Menu = () => {
 
   return (
     <div className="menu-container">
-      <div className="logo"></div>
+      <div className="logo" onClick={() => navigate("/")}></div>
       <div className="menu-item" onClick={() => navigate("/")}>
         <p className="menu-item-text">
           <span className="menu-item-number">1 </span>Home
