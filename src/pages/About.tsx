@@ -1,10 +1,10 @@
 import React from "react";
-import Header from "../components/Header/Header";
+import Menu from "../components/Menu/Menu";
 
 const About = () => {
   return (
     <>
-      <Header />
+      <Menu />
       <div>
         <p>hello from about</p>
       </div>

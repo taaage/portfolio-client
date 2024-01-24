@@ -4,15 +4,18 @@
   padding-right: 4em;
 }
 
-@media screen and (max-width: 480px) {
-  .menu-container {
-    justify-content: center;
-    padding-right: 0em;
-  }
+.menu-container > div:first-child {
+  width: 2em;
+  height: 2em;
+  border: 0.1em solid #64ffda;
+  margin-top: 1.5em;
+  margin-left: 1em;
+  margin-right: auto;
+  border-radius: 50%;
 }
 
 .menu-item {
-  margin-top: 25px;
+  margin-top: 1em;
   padding-right: 0.5em;
   padding-left: 0.5em;
 }
@@ -22,10 +25,17 @@
 }
 
 .menu-item-text:hover {
-  color: #4fb9af;
+  color: #64ffda;
   cursor: pointer;
 }
 
 .menu-item-number {
-  color: #36d3c3;
+  color: #64ffda;
+}
+
+@media screen and (max-width: 480px) {
+  .menu-container {
+    justify-content: center;
+    padding-right: 0em;
+  }
 }

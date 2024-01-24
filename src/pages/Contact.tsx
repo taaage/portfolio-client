@@ -1,10 +1,10 @@
 import React from "react";
-import Header from "../components/Header/Header";
+import Menu from "../components/Menu/Menu";
 
 const Contact = () => {
   return (
     <>
-      <Header />
+      <Menu />
       <div>
         <p>hello from contact</p>
       </div>

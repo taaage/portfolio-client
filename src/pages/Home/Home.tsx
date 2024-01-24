@@ -1,12 +1,11 @@
-import Header from "../../components/Header/Header";
-
 import "../../App.css";
 import "./Home.css";
+import Menu from "../../components/Menu/Menu";
 
 const Home = () => {
   return (
     <>
-      <Header />
+      <Menu />
       <div className="home-content-container">
         <div>
           <p className="home-content-row-one">Hello, my name is</p>

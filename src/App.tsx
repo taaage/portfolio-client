@@ -1,10 +1,10 @@
 import React from "react";
-import Header from "./components/Header/Header";
 
 import "./App.css";
+import Menu from "./components/Menu/Menu";
 
 const App = () => {
-  return <Header />;
+  return <Menu />;
 };
 
 export default App;

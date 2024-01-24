@@ -6,7 +6,7 @@
   margin-right: 4em;
 }
 .home-content-row-one {
-  color: #36d3c3;
+  color: #64ffda;
 }
 .home-content-row-two {
   font-size: min(6vw, 6em);
@@ -37,7 +37,7 @@
   height: 2em;
   border-radius: 0.5em;
   background-color: #071630;
-  border: 1px solid #36d3c3;
+  border: 1px solid #64ffda;
   color: white;
   font-family: "Consonlas";
 }
@@ -50,6 +50,8 @@
 @media screen and (max-width: 480px) {
   .home-content-container {
     align-items: center;
+    margin-right: 2em;
+    margin-left: 2em;
   }
 
   .home-content-row-four {
