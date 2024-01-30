@@ -1,5 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import LogoGreen from "../../images/logo-green.png";
 
 import "./Menu.css";
 
@@ -8,7 +9,11 @@ const Menu = () => {
 
   return (
     <div className="menu-container">
-      <div className="logo" onClick={() => navigate("/")}></div>
+      <div className="menu-item" onClick={() => navigate("/")}>
+        <img src={LogoGreen} alt="logo" className="logo" />
+        <div onClick={() => navigate("/")}></div>
+      </div>
+
       <div className="menu-item" onClick={() => navigate("/")}>
         <p className="menu-item-text">
           <span className="menu-item-number">1 </span>Home
