@@ -2,6 +2,7 @@
   display: flex;
   justify-content: right;
   padding-right: 4em;
+  align-items: center;
 }
 
 .menu-item {
@@ -15,9 +16,10 @@
 }
 
 .menu-item img {
-  margin-top: -0.5em;
-  width: 4em;
-  height: 4em;
+  margin-left: 4em;
+  margin-right: 0.5em;
+  width: 3em;
+  height: 2.5em;
 }
 
 .menu-item:hover {
@@ -37,14 +39,15 @@
   color: #64ffda;
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 480px) {
   .menu-container {
     padding-right: 0em;
   }
-}
-
-@media screen and (max-width: 480px) {
   .menu-item-text {
     font-size: 12px;
+  }
+
+  .menu-item img {
+    margin-left: 1em;
   }
 }

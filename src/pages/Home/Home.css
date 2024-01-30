@@ -5,9 +5,11 @@
   margin-left: 4em;
   margin-right: 4em;
 }
+
 .home-content-row-one {
   color: #64ffda;
 }
+
 .home-content-row-two {
   font-size: min(6vw, 6em);
   letter-spacing: 0.025em;
@@ -27,6 +29,7 @@
 .ericsson-text {
   text-decoration: none;
 }
+
 .ericsson-text:hover {
   cursor: pointer;
   color: red;

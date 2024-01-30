@@ -28,7 +28,7 @@ const Menu = () => {
         {menuItems.map(({ number, title, logo, url }) => (
           <div className="menu-item" onClick={() => navigate(url)}>
             {logo ? (
-              <img src={logo} alt={title} className="menu-item-logo" />
+              <img src={logo} alt={"alt"} />
             ) : (
               <p className="menu-item-text">
                 <span className="menu-item-number">{number}</span> {title}
