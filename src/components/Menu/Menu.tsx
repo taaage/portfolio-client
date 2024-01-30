@@ -4,39 +4,43 @@ import LogoGreen from "../../images/logo-green.png";
 
 import "./Menu.css";
 
+type MenuItem = {
+  number?: number;
+  title?: string;
+  logo?: string;
+  url: string;
+};
+
 const Menu = () => {
   let navigate = useNavigate();
 
-  return (
-    <div className="menu-container">
-      <div className="menu-item" onClick={() => navigate("/")}>
-        <img src={LogoGreen} alt="logo" className="logo" />
-        <div onClick={() => navigate("/")}></div>
-      </div>
+  const renderMenuItems = () => {
+    const menuItems: MenuItem[] = [
+      { logo: LogoGreen, url: "/" },
+      { number: 1, title: "Home", url: "/" },
+      { number: 3, title: "Projects", url: "/projects" },
+      { number: 3, title: "Contact", url: "/contact" },
+      { number: 7, title: "About", url: "/about" },
+    ];
 
-      <div className="menu-item" onClick={() => navigate("/")}>
-        <p className="menu-item-text">
-          <span className="menu-item-number">1 </span>Home
-        </p>
+    return (
+      <div className="menu-container">
+        {menuItems.map(({ number, title, logo, url }) => (
+          <div className="menu-item" onClick={() => navigate(url)}>
+            {logo ? (
+              <img src={logo} alt={title} className="menu-item-logo" />
+            ) : (
+              <p className="menu-item-text">
+                <span className="menu-item-number">{number}</span> {title}
+              </p>
+            )}
+          </div>
+        ))}
       </div>
+    );
+  };
 
-      <div className="menu-item" onClick={() => navigate("/projects")}>
-        <p className="menu-item-text">
-          <span className="menu-item-number">3 </span>Projects
-        </p>
-      </div>
-      <div className="menu-item" onClick={() => navigate("/contact")}>
-        <p className="menu-item-text">
-          <span className="menu-item-number">3 </span>Contact
-        </p>
-      </div>
-      <div className="menu-item" onClick={() => navigate("/about")}>
-        <p className="menu-item-text">
-          <span className="menu-item-number">7 </span>About
-        </p>
-      </div>
-    </div>
-  );
+  return renderMenuItems();
 };
 
 export default Menu;
