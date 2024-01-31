@@ -4,31 +4,23 @@
   align-items: center;
 }
 
-.form-label {
-  text-align: center;
-}
-
-.form-input-item {
+.form-input,
+.form-input-message {
+  width: 20em;
+  background-color: #071630;
+  color: white;
   resize: none;
 }
 
-.form-input-item-message {
-  resize: none;
+.form-input-message {
   height: 10em;
 }
 
-.form-submit-item {
-  width: 5em;
-  height: 2em;
-  font-family: "Coolvetica";
-  margin-top: 1em;
-  margin-bottom: 1em;
-  color: white;
-  background-color: #64ffda;
-  border: none;
-  border-radius: 0.5em;
+.form-input-item {
+  text-align: center;
 }
 
-.form-submit-item:hover {
-  cursor: pointer;
+textarea::placeholder {
+  color: white;
+  opacity: 0.25;
 }

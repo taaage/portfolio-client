@@ -11,8 +11,6 @@ const Contact = () => {
     e.preventDefault();
 
     if (form.current) {
-      form.current.reset();
-
       emailjs
         .sendForm(
           "service_1w2uxko",
@@ -28,6 +26,7 @@ const Contact = () => {
             console.log(error);
           }
         );
+      form.current.reset();
     }
   };
 
@@ -38,7 +37,7 @@ const Contact = () => {
       placeholder: "what is your name?",
     },
     {
-      label: "Email",
+      label: "Email ✉",
       name: "user_email",
       placeholder: "what is your email?",
     },
@@ -63,9 +62,7 @@ const Contact = () => {
           ) : (
             <textarea
               className={
-                name === "message"
-                  ? "form-input-item-message"
-                  : "form-input-item"
+                name === "message" ? "form-input-message" : "form-input"
               }
               name={name}
               placeholder={placeholder}
@@ -77,12 +74,12 @@ const Contact = () => {
   };
 
   return (
-    <form ref={form} onSubmit={sendEmail}>
-      <div className="contact-form-container wave fourth-wave">
-        <p className="green-color">please dont spam</p>
+    <div className="contact-form-container wave fourth-wave">
+      <p className="green-color">please dont spam</p>
+      <form ref={form} onSubmit={sendEmail}>
         {renderForm()}
-      </div>
-    </form>
+      </form>
+    </div>
   );
 };
 
