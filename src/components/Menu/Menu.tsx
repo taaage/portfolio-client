@@ -1,5 +1,5 @@
 import React from "react";
-import LogoGreen from "../../images/logo-green.png";
+import LogoGreen from "../../images/logo/logo-green.png";
 
 import "./Menu.css";
 
