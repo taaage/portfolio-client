@@ -1,13 +1,13 @@
 @font-face {
   font-family: "Consonlas";
-  src: url("../public/fonts/Consola.TTF") format("truetype");
+  src: url("../public/fonts/Consola.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Coolvetica";
-  src: url("../public/fonts/coolvetica.rg-regular.otf") format("truetype");
+  src: url("../public/fonts/Coolvetica.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -15,19 +15,23 @@
 body {
   font-family: "Consonlas", "Courier New", monospace;
   background-color: #071630;
-  opacity: 0;
-  animation: fadeIn 5s ease-in-out forwards;
+  /* opacity: 0; */
+  /* animation: fadeIn 5s ease-in-out forwards; */
+  user-select: none;
 }
 
-@keyframes fadeIn {
+/* @keyframes fadeIn {
   0% {
     opacity: 0;
   }
   100% {
     opacity: 1;
   }
-}
+} */
 
-p {
+div,
+p,
+span,
+a {
   color: white;
 }

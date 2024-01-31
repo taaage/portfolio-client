@@ -1,3 +1,60 @@
 .green-color {
   color: #64ffda;
 }
+
+.blue-color {
+  color: #071630;
+}
+
+.purple-color {
+  color: #d1a2f9;
+}
+
+.wave {
+  aspect-ratio: 960/540;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.inverted-wave {
+  aspect-ratio: 960/540;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  transform: scaleY(-1);
+  transform: rotate(-180deg);
+}
+
+.first-wave {
+  background-image: url("./images/waves-1.svg");
+}
+
+.second-wave {
+  background-image: url("./images/waves-2.svg");
+}
+
+.third-wave {
+  background-image: url("./images/waves-3.svg");
+}
+
+.fourth-wave {
+  background-image: url("./images/waves-4.svg");
+}
+
+.my-button {
+  width: 8em;
+  height: 2em;
+  border-radius: 0.5em;
+  background-color: #071630;
+  border: 1px solid #64ffda;
+  color: white;
+  font-family: "Consonlas";
+}
+
+.my-button:hover {
+  border: 1px solid red;
+  cursor: pointer;
+}
