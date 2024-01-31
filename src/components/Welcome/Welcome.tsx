@@ -3,9 +3,10 @@ import github from "../../images/socials/github.svg";
 import instagram from "../../images/socials/instagram.svg";
 import likeGreen from "../../images/socials/like-green.svg";
 import like from "../../images/socials/like.svg";
-import linkedin from "../../images/socials/linkedin.svg";
+import linkedinWhite from "../../images/socials/linkedin-white.svg";
 import pinterest from "../../images/socials/pinterest.svg";
 import share from "../../images/socials/share.svg";
+import sharePurple from "../../images/socials/share-purple.svg";
 import youtube from "../../images/socials/youtube.svg";
 
 import "./Welcome.css";
@@ -24,6 +25,7 @@ type SocialItemType = {
 
 const Welcome = () => {
   const [likeIcon, setLikeIcon] = useState(false);
+  const [shareIcon, setShareIcon] = useState(false);
   const [message, setMessage] = useState("");
 
   const baseUrl = "https://tigge-nilsson.vercel.app/";
@@ -50,7 +52,7 @@ const Welcome = () => {
 
   const socialItem: SocialItemType[] = [
     {
-      image: linkedin,
+      image: linkedinWhite,
       alt: "linkedin",
       url: "https://www.linkedin.com/",
     },
@@ -92,8 +94,10 @@ const Welcome = () => {
     // Assuming baseUrl is defined somewhere in your component or props
     window.navigator.clipboard.writeText(baseUrl);
     setMessage("URL Copied to clipboard!");
+    setShareIcon(true);
     setTimeout(() => {
       setMessage("");
+      setShareIcon(false); // Move setShareIcon(false) inside the setTimeout callback
     }, 2000);
   };
 
@@ -123,7 +127,7 @@ const Welcome = () => {
               <img
                 className="social-item"
                 key={index}
-                src={image}
+                src={shareIcon ? sharePurple : image}
                 alt="share"
                 onClick={() => copyToClipboard()}
               ></img>
