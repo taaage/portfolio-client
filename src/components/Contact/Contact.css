@@ -1,0 +1,34 @@
+.contact-form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-label {
+  text-align: center;
+}
+
+.form-input-item {
+  resize: none;
+}
+
+.form-input-item-message {
+  resize: none;
+  height: 10em;
+}
+
+.form-submit-item {
+  width: 5em;
+  height: 2em;
+  font-family: "Coolvetica";
+  margin-top: 1em;
+  margin-bottom: 1em;
+  color: white;
+  background-color: #64ffda;
+  border: none;
+  border-radius: 0.5em;
+}
+
+.form-submit-item:hover {
+  cursor: pointer;
+}
