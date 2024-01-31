@@ -45,6 +45,32 @@
   color: red;
 }
 
+.social-item-container {
+  display: flex;
+  column-gap: 1em;
+  margin-left: 4em;
+  margin-right: 4em;
+  margin-top: 0.5em;
+}
+
+.social-item {
+  width: 1.25em;
+  height: 1.25em;
+}
+
+.social-item:hover {
+  cursor: pointer;
+}
+
+.copy-message-container {
+  margin-left: 4em;
+}
+
+.copy-message {
+  font-size: 0.5em;
+  color: red;
+}
+
 @media screen and (max-width: 720px) {
   .welcome-item {
     text-align: center;
