@@ -1,29 +1,39 @@
-.home-content-container {
+.welcome-container {
   padding-top: 4em;
   display: flex;
   flex-direction: column;
+}
+
+.welcome-item {
   margin-left: 4em;
   margin-right: 4em;
 }
 
-.home-content-row-one {
+.welcome-item p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.welcome-item:nth-child(1) p {
   color: #64ffda;
 }
 
-.home-content-row-two {
+.welcome-item:nth-child(2) p {
   font-size: min(6vw, 6em);
   letter-spacing: 0.025em;
   color: #d1a2f9;
   font-family: "Coolvetica";
-  margin: 0em;
 }
 
-.home-content-row-three {
+.welcome-item:nth-child(3) p {
   font-size: min(6vw, 6em);
   letter-spacing: 0.025em;
   color: #cecdcd;
   font-family: "Coolvetica";
-  margin: 0em;
+}
+
+.welcome-item:nth-child(5) p {
+  margin-top: 1em;
 }
 
 .ericsson-text {
@@ -35,29 +45,8 @@
   color: red;
 }
 
-.github-button {
-  width: 8em;
-  height: 2em;
-  border-radius: 0.5em;
-  background-color: #071630;
-  border: 1px solid #64ffda;
-  color: white;
-  font-family: "Consonlas";
-}
-
-.github-button:hover {
-  cursor: pointer;
-  border: 1px solid red;
-}
-
 @media screen and (max-width: 720px) {
-  .home-content-container {
-    align-items: center;
-    margin-right: 2em;
-    margin-left: 2em;
-  }
-
-  .home-content-row-four {
+  .welcome-item {
     text-align: center;
   }
 }

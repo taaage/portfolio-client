@@ -1,5 +1,4 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
 import LogoGreen from "../../images/logo-green.png";
 
 import "./Menu.css";
@@ -12,8 +11,6 @@ type MenuItem = {
 };
 
 const Menu = () => {
-  let navigate = useNavigate();
-
   const renderMenuItems = () => {
     const menuItems: MenuItem[] = [
       { logo: LogoGreen, url: "/" },
@@ -25,8 +22,12 @@ const Menu = () => {
 
     return (
       <div className="menu-container">
-        {menuItems.map(({ number, title, logo, url }) => (
-          <div className="menu-item" onClick={() => navigate(url)}>
+        {menuItems.map(({ number, title, logo, url }, index) => (
+          <div
+            key={index}
+            className="menu-item"
+            onClick={() => console.log("hello")}
+          >
             {logo ? (
               <img src={logo} alt={"alt"} />
             ) : (

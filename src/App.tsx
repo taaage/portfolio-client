@@ -1,10 +1,18 @@
 import React from "react";
+import Menu from "./components/Menu/Menu";
+import Welcome from "./components/Welcome/Welcome";
 
 import "./App.css";
-import Menu from "./components/Menu/Menu";
+import Contact from "./components/Contact/Contact";
 
 const App = () => {
-  return <Menu />;
+  return (
+    <>
+      <Menu />
+      <Welcome />
+      <Contact />
+    </>
+  );
 };
 
 export default App;
