@@ -10,6 +10,7 @@
   background-color: #071630;
   color: white;
   resize: none;
+  border: 1px solid #d1a2f9;
 }
 
 .form-input-message {
