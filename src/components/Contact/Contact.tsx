@@ -61,6 +61,7 @@ const Contact = () => {
             <input className="my-button" type={type} value={value} />
           ) : (
             <textarea
+              required
               className={
                 name === "message" ? "form-input-message" : "form-input"
               }
