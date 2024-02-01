@@ -53,9 +53,17 @@
   margin-top: 0.5em;
 }
 
-.social-item {
-  width: 1.25em;
-  height: 1.25em;
+.social-image {
+  width: 1.5em;
+  height: 1.5em;
+}
+
+.liked {
+  filter: invert(0.45) sepia(3) saturate(5) hue-rotate(220deg);
+}
+
+.social-image:hover {
+  filter: invert(0.45) sepia(3) saturate(5) hue-rotate(220deg);
 }
 
 .social-item:hover {

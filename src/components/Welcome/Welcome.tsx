@@ -113,10 +113,10 @@ const Welcome = () => {
     return (
       <div className="social-item-container">
         {socialItem.map(({ image, alt, url }, index) => (
-          <div key={index}>
+          <div key={index} className="social-item">
             {alt !== "share" && alt !== "like" && (
               <img
-                className="social-item"
+                className="social-image"
                 key={index}
                 src={image}
                 alt={alt}
@@ -125,7 +125,7 @@ const Welcome = () => {
             )}
             {alt === "share" && (
               <img
-                className="social-item"
+                className={shareIcon ? "social-image liked" : "social-image"}
                 key={index}
                 src={shareIcon ? sharePurple : image}
                 alt="share"
@@ -134,9 +134,9 @@ const Welcome = () => {
             )}
             {alt === "like" && (
               <img
-                className="social-item"
+                className={likeIcon ? "social-image liked" : "social-image"}
                 key={index}
-                src={likeIcon ? likeGreen : image}
+                src={image}
                 alt="like"
                 onClick={() => triggerLike()}
               ></img>
