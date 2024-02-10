@@ -37,7 +37,7 @@ const Contact = () => {
       placeholder: "what is your name?",
     },
     {
-      label: "Email ✉",
+      label: "Email",
       name: "user_email",
       placeholder: "what is your email?",
     },
