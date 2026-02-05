@@ -1,17 +1,15 @@
 import React from "react";
-import Menu from "./components/Menu/Menu";
-import Welcome from "./components/Welcome/Welcome";
+import Hero from "./components/Hero/Hero";
+import Work from "./components/Work/Work";
 
 import "./App.css";
-import Contact from "./components/Contact/Contact";
 
 const App = () => {
   return (
-    <>
-      <Menu />
-      <Welcome />
-      <Contact />
-    </>
+    <div className="page-home">
+      <Hero />
+      <Work />
+    </div>
   );
 };
 

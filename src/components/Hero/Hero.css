@@ -1,0 +1,154 @@
+.section-hero {
+  padding: 6em 0 5em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25em;
+}
+
+.hero-line {
+  margin-left: 4em;
+  margin-right: 4em;
+  max-width: 780px;
+  line-height: 1.25;
+  opacity: 0;
+  animation: fade-up 0.8s ease forwards;
+}
+
+.hero-line:nth-child(1) {
+  animation-delay: 0.05s;
+}
+
+.hero-line:nth-child(2) {
+  animation-delay: 0.15s;
+}
+
+.hero-line:nth-child(3) {
+  animation-delay: 0.25s;
+}
+
+.hero-line:nth-child(4) {
+  animation-delay: 0.35s;
+}
+
+.hero-line p {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: clamp(1rem, 1.5vw, 1.15rem);
+  line-height: 1.6;
+}
+
+.hero-line:nth-child(1) p {
+  color: #64ffda;
+  font-size: 0.95rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.hero-line:nth-child(2) p {
+  font-size: clamp(2.8rem, 6vw, 4.6rem);
+  letter-spacing: 0.025em;
+  color: #d1a2f9;
+  font-family: "Coolvetica";
+  text-shadow: 0 18px 40px rgba(209, 162, 249, 0.35);
+}
+
+.hero-line:nth-child(3) p {
+  font-size: clamp(2.4rem, 5.5vw, 4.2rem);
+  letter-spacing: 0.025em;
+  color: #d8d2e6;
+  font-family: "Coolvetica";
+  text-shadow: 0 12px 28px rgba(206, 205, 205, 0.2);
+}
+
+.hero-line:nth-child(4) span {
+  font-size: clamp(1rem, 1.4vw, 1.1rem);
+  line-height: 1.7;
+  color: #cdd6e8;
+}
+
+.hero-line:nth-child(5) p {
+  margin-top: 1em;
+}
+
+.hero-link {
+  text-decoration: none;
+  position: relative;
+  font-weight: 600;
+}
+
+.hero-link:hover {
+  cursor: pointer;
+  color: #64ffda;
+}
+
+.hero-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.15em;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, #64ffda, #d1a2f9);
+  opacity: 0.8;
+  transform: scaleX(0.6);
+  transform-origin: left;
+  transition: transform 200ms ease;
+}
+
+.hero-link:hover::after {
+  transform: scaleX(1);
+}
+
+.hero-socials {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 1em;
+  row-gap: 0.75em;
+  margin-left: 4em;
+  margin-right: 4em;
+  margin-top: 1.25em;
+}
+
+.hero-social-icon {
+  width: 1.5em;
+  height: 1.5em;
+  transition: transform 200ms ease, filter 200ms ease;
+}
+
+.is-active {
+  filter: invert(0.45) sepia(3) saturate(5) hue-rotate(220deg);
+}
+
+.hero-social-icon:hover {
+  filter: invert(0.45) sepia(3) saturate(5) hue-rotate(220deg);
+  transform: translateY(-2px) scale(1.08);
+}
+
+.hero-social:hover {
+  cursor: pointer;
+}
+
+.hero-message {
+  margin-left: 4em;
+}
+
+.hero-message-text {
+  font-size: 0.75em;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #64ffda;
+}
+
+@media screen and (max-width: 720px) {
+  .hero-line {
+    text-align: center;
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+
+  .hero-socials {
+    justify-content: center;
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+}
