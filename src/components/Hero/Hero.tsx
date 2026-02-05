@@ -34,7 +34,7 @@ const Hero = () => {
     { text: "Tigge Nilsson." },
     { text: "I build things for the web." },
     {
-      text: " I'm a software engineer specializing in React, building exceptional digital experiences. Currently I'm focused on building accessable and human friendly products at ",
+      text: " I'm a software engineer specializing in React, crafting thoughtful user interfaces and resilient front-end systems. I care about accessibility, performance, and clear UX, and I enjoy collaborating across product and design to ship meaningful experiences. Right now I'm focused on building human-friendly products at ",
       noBreak: true,
       children: (
         <a

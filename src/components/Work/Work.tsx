@@ -6,59 +6,35 @@ type WorkItem = {
   title: string;
   description: string;
   stack: string;
-  action: string;
+
 };
 
 const Work = () => {
   const workItems: WorkItem[] = [
     {
-      title: "Portfolio Redesign",
-      description: "A full UI refresh with motion and accessibility in mind.",
-      stack: "React · Tailwind · TypeScript",
-      action: "View Case Study",
+      title: "Project 1",
+      description: "TBD.",
+      stack: "Typescript · Tailwind CSS"
     },
     {
-      title: "Realtime Analytics",
-      description: "Streaming dashboards with live collaboration features.",
-      stack: "React · D3 · WebSockets",
-      action: "Open Project",
+      title: "Project 2",
+      description: "TBD.",
+      stack: "C# · Entity Framework",
     },
     {
-      title: "Design System",
-      description: "Reusable components and tokens for consistent delivery.",
-      stack: "Storybook · CSS · Figma",
-      action: "Browse Library",
+      title: "Project 3",
+     description: "TBD.",
+      stack: "Terraform",
     },
     {
-      title: "Ecommerce Experience",
-      description: "High-converting storefront with fast checkout flow.",
-      stack: "Next.js · Stripe · Tailwind",
-      action: "See Details",
-    },
-    {
-      title: "Mobile Companion",
-      description: "Cross-platform app for on-the-go product insights.",
-      stack: "React Native · Expo",
-      action: "View Demo",
-    },
-    {
-      title: "AI Content Studio",
-      description: "Smart editing tools for faster publishing workflows.",
-      stack: "Node · React · OpenAI",
-      action: "Learn More",
+      title: "Project 4",
+       description: "TBD.",
+      stack: "AI · Copilot",
     },
   ];
 
   return (
     <section className="section-work">
-      <div className="work-header">
-        <p className="work-eyebrow">Selected Work</p>
-        <h2 className="work-title">Projects that showcase impact</h2>
-        <p className="work-subtitle">
-          A curated set of builds spanning UI, data, and product experiences.
-        </p>
-      </div>
-
       <div className="work-grid">
         {workItems.map((item) => (
           <button key={item.title} className="work-card" type="button">
@@ -67,7 +43,6 @@ const Work = () => {
               <p>{item.description}</p>
               <span>{item.stack}</span>
             </div>
-            <div className="work-card-action">{item.action}</div>
           </button>
         ))}
       </div>
