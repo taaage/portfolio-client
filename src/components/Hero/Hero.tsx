@@ -4,8 +4,6 @@ import instagram from "../../images/socials/instagram.svg";
 import like from "../../images/socials/like.svg";
 import linkedinWhite from "../../images/socials/linkedin-white.svg";
 import pinterest from "../../images/socials/pinterest.svg";
-import share from "../../images/socials/share.svg";
-import sharePurple from "../../images/socials/share-purple.svg";
 import youtube from "../../images/socials/youtube.svg";
 
 import "./Hero.css";
@@ -24,10 +22,6 @@ type SocialLink = {
 
 const Hero = () => {
   const [likeIcon, setLikeIcon] = useState(false);
-  const [shareIcon, setShareIcon] = useState(false);
-  const [message, setMessage] = useState("");
-
-  const baseUrl = "https://tigge-nilsson.vercel.app/";
 
   const heroLines: HeroLine[] = [
     { text: "Hello, my name is" },
@@ -51,33 +45,23 @@ const Hero = () => {
 
   const socialLinks: SocialLink[] = [
     {
-      image: linkedinWhite,
-      alt: "linkedin",
-      url: "https://www.linkedin.com/",
-    },
-    {
       image: youtube,
       alt: "youtube",
-      url: "https://www.youtube.com/",
+      url: "https://www.youtube.com/@tiggenilsson",
+    },{
+      image: linkedinWhite,
+      alt: "linkedin",
+      url: "https://www.linkedin.com/tigge-nilsson",
     },
     {
       image: instagram,
       alt: "instagram",
-      url: "https://www.instagram.com/",
-    },
-    {
-      image: pinterest,
-      alt: "pinterest",
-      url: "https://www.pinterest.com/",
+      url: "https://www.instagram.com/yolotigge",
     },
     {
       image: github,
       alt: "github",
-      url: "https://www.github.com/",
-    },
-    {
-      image: share,
-      alt: "share",
+      url: "https://github.com/taaage",
     },
     {
       image: like,
@@ -89,15 +73,6 @@ const Hero = () => {
     setLikeIcon(!likeIcon);
   };
 
-  const copyToClipboard = () => {
-    window.navigator.clipboard.writeText(baseUrl);
-    setMessage("URL Copied to clipboard!");
-    setShareIcon(true);
-    setTimeout(() => {
-      setMessage("");
-      setShareIcon(false);
-    }, 2000);
-  };
 
   const renderHeroLines = () =>
     heroLines.map(({ text, noBreak, children }, index) => (
@@ -121,19 +96,6 @@ const Hero = () => {
                 onClick={() => window.open(url, "_blank")}
               ></img>
             )}
-            {alt === "share" && (
-              <img
-                className={
-                  shareIcon
-                    ? "hero-social-icon is-active"
-                    : "hero-social-icon"
-                }
-                key={index}
-                src={shareIcon ? sharePurple : image}
-                alt="share"
-                onClick={() => copyToClipboard()}
-              ></img>
-            )}
             {alt === "like" && (
               <img
                 className={
@@ -153,17 +115,10 @@ const Hero = () => {
     );
   };
 
-  const renderClipboardResult = () => (
-    <div className="hero-message">
-      {message && <p className="hero-message-text">{message}</p>}
-    </div>
-  );
-
   return (
     <div className="section-hero">
       {renderHeroLines()}
       {renderSocialItems()}
-      {renderClipboardResult()}
     </div>
   );
 };
