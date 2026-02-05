@@ -6,7 +6,6 @@ type WorkItem = {
   title: string;
   description: string;
   stack: string;
-
 };
 
 const Work = () => {
@@ -14,7 +13,7 @@ const Work = () => {
     {
       title: "Project 1",
       description: "TBD.",
-      stack: "Typescript · Tailwind CSS"
+      stack: "Typescript · Tailwind CSS",
     },
     {
       title: "Project 2",
@@ -23,12 +22,12 @@ const Work = () => {
     },
     {
       title: "Project 3",
-     description: "TBD.",
+      description: "TBD.",
       stack: "Terraform",
     },
     {
       title: "Project 4",
-       description: "TBD.",
+      description: "TBD.",
       stack: "AI · Copilot",
     },
   ];

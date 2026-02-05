@@ -40,7 +40,7 @@ const Hero = () => {
         <a
           className="hero-link green-color"
           href="https://www.ericsson.com/"
-          target="_blank "
+          target="_blank"
           rel="noreferrer"
         >
           Ericsson.
