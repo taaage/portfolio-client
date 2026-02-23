@@ -3,7 +3,6 @@ import github from "../../images/socials/github.svg";
 import instagram from "../../images/socials/instagram.svg";
 import like from "../../images/socials/like.svg";
 import linkedinWhite from "../../images/socials/linkedin-white.svg";
-import pinterest from "../../images/socials/pinterest.svg";
 import youtube from "../../images/socials/youtube.svg";
 
 import "./Hero.css";
