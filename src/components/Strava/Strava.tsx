@@ -37,7 +37,11 @@ export default function Strava() {
       </ul>
 
       <p>
-        <a href="https://github.com/taaage/strava-descriptions" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://github.com/taaage/strava-descriptions"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           View on GitHub →
         </a>
       </p>

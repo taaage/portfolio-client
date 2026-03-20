@@ -1,4 +1,5 @@
 import InterestBar from "../InterestBar/InterestBar";
+
 import "./Resume.css";
 
 const Resume = () => {

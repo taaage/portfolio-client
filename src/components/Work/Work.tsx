@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+
 import "./Work.css";
 
 type WorkItem = {
@@ -22,14 +23,16 @@ const Work = () => {
     },
     {
       title: "Strava AI Descriptions",
-      description: "Automatically generates AI-powered descriptions for Strava activities using webhooks and Google Gemini.",
+      description:
+        "Automatically generates AI-powered descriptions for Strava activities using webhooks and Google Gemini.",
       stack: "Next.js · Google Gemini",
       to: "/strava",
       year: "2026",
     },
     {
       title: "Lowes Book Library",
-      description: "A book library app with ratings, comments, and CRUD operations. Built for my son Lowe.",
+      description:
+        "A book library app with ratings, comments, and CRUD operations. Built for my son Lowe.",
       stack: "React · .NET · C#",
       to: "/books",
       year: "2025",
@@ -57,7 +60,9 @@ const Work = () => {
                 <Link key={item.title} to={item.to} className="work-item">
                   <div className="work-item-header">
                     <h3>{item.title}</h3>
-                    {item.wip && <span className="work-wip">Work in Progress</span>}
+                    {item.wip && (
+                      <span className="work-wip">Work in Progress</span>
+                    )}
                     <div className="work-arrow">→</div>
                   </div>
                   <p>{item.description}</p>

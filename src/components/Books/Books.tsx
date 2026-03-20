@@ -1,14 +1,17 @@
 import { useEffect, useState } from "react";
-import { booksApi } from "./booksApi";
-import { commentsApi } from "./commentsApi";
 import { BookCard } from "./BookCard";
 import { BookForm } from "./BookForm";
+import { booksApi } from "./booksApi";
+import { commentsApi } from "./commentsApi";
 import type { Book } from "./types";
+
 import "./Books.css";
 
 export default function Books() {
   const [books, setBooks] = useState<Book[]>([]);
-  const [commentCounts, setCommentCounts] = useState<Record<number, number>>({});
+  const [commentCounts, setCommentCounts] = useState<Record<number, number>>(
+    {},
+  );
   const [sortAsc, setSortAsc] = useState(false);
   const [editing, setEditing] = useState<Book | null>(null);
   const [adding, setAdding] = useState(false);
@@ -18,7 +21,9 @@ export default function Books() {
     commentsApi.getCounts().then(setCommentCounts);
   };
 
-  useEffect(() => { fetchData(); }, []);
+  useEffect(() => {
+    fetchData();
+  }, []);
 
   const sorted = [...books].sort((a, b) =>
     sortAsc ? a.rating - b.rating : b.rating - a.rating,
@@ -28,13 +33,21 @@ export default function Books() {
 
   const handleSave = (book: Book) => {
     const isNew = !books.find((b) => b.id === book.id);
-    const action = isNew ? booksApi.create(book) : booksApi.update(book.id, book);
-    action.then(fetchData).then(() => { setEditing(null); setAdding(false); });
+    const action = isNew
+      ? booksApi.create(book)
+      : booksApi.update(book.id, book);
+    action.then(fetchData).then(() => {
+      setEditing(null);
+      setAdding(false);
+    });
   };
 
   const emptyBook: Book = {
     id: Math.max(0, ...books.map((b) => b.id)) + 1,
-    title: "", author: "", yearPublished: "", rating: 0,
+    title: "",
+    author: "",
+    yearPublished: "",
+    rating: 0,
   };
 
   return (
@@ -53,7 +66,10 @@ export default function Books() {
         <BookForm
           book={editing || emptyBook}
           onSave={handleSave}
-          onCancel={() => { setEditing(null); setAdding(false); }}
+          onCancel={() => {
+            setEditing(null);
+            setAdding(false);
+          }}
         />
       )}
 
