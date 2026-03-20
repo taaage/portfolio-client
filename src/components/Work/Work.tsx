@@ -16,7 +16,7 @@ const Work = () => {
     {
       title: "Home Assistant",
       description: "Smart home automation and custom integrations.",
-      stack: "TBD",
+      stack: "Docker · Philips Hue",
       to: "/home-assistant",
       year: "2026",
       wip: true,
