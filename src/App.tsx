@@ -1,15 +1,30 @@
 import React from "react";
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import Hero from "./components/Hero/Hero";
 import Work from "./components/Work/Work";
+import Resume from "./components/Resume/Resume";
 
 import "./App.css";
 
+const Home = () => (
+  <div className="page-home">
+    <Hero />
+    <Work />
+  </div>
+);
+
 const App = () => {
   return (
-    <div className="page-home">
-      <Hero />
-      <Work />
-    </div>
+    <BrowserRouter>
+      <nav className="site-nav">
+        <Link to="/">Home</Link>
+        <Link to="/resume">CV/Resume</Link>
+      </nav>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/resume" element={<Resume />} />
+      </Routes>
+    </BrowserRouter>
   );
 };
 

@@ -1,0 +1,89 @@
+.section-resume {
+  padding: 6em 4em 5em;
+  max-width: 820px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.resume-title {
+  font-family: "Coolvetica";
+  font-size: clamp(2.4rem, 5vw, 3.8rem);
+  color: #d1a2f9;
+  margin: 0;
+}
+
+.resume-section h2 {
+  color: #64ffda;
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  font-family: "Coolvetica";
+  letter-spacing: 0.04em;
+  margin: 0 0 1em;
+  display: flex;
+  align-items: center;
+  gap: 0.4em;
+}
+
+.resume-icon {
+  width: 1em;
+  height: 1em;
+  color: #ffffff;
+}
+
+.resume-item {
+  margin-bottom: 1.5em;
+}
+
+.resume-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.5em;
+}
+
+.resume-item h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #d1a2f9;
+}
+
+.resume-date {
+  font-size: 0.85rem;
+  color: #8892b0;
+}
+
+.resume-item p {
+  margin: 0.25em 0 0;
+  color: #cdd6e8;
+  line-height: 1.6;
+}
+
+.resume-tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.6em;
+}
+
+.resume-interests {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75em;
+}
+
+.resume-tag {
+  border: 1px solid rgba(100, 255, 218, 0.18);
+  border-radius: 999px;
+  padding: 0.35em 1em;
+  font-size: 0.85rem;
+  color: #cdd6e8;
+}
+
+@media screen and (max-width: 720px) {
+  .section-resume {
+    padding: 4.5em 2em 5em;
+  }
+}
