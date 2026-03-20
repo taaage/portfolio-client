@@ -1,8 +1,7 @@
-import React from "react";
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
 import Hero from "./components/Hero/Hero";
-import Work from "./components/Work/Work";
 import Resume from "./components/Resume/Resume";
+import Work from "./components/Work/Work";
 
 import "./App.css";
 

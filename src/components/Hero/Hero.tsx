@@ -1,9 +1,7 @@
 import React, { useState } from "react";
 import github from "../../images/socials/github.svg";
-import instagram from "../../images/socials/instagram.svg";
 import like from "../../images/socials/like.svg";
 import linkedinWhite from "../../images/socials/linkedin-white.svg";
-import youtube from "../../images/socials/youtube.svg";
 
 import "./Hero.css";
 
@@ -63,7 +61,6 @@ const Hero = () => {
     setLikeIcon(!likeIcon);
   };
 
-
   const renderHeroLines = () =>
     heroLines.map(({ text, noBreak, children }, index) => (
       <div key={index} className="hero-line">
@@ -89,9 +86,7 @@ const Hero = () => {
             {alt === "like" && (
               <img
                 className={
-                  likeIcon
-                    ? "hero-social-icon is-active"
-                    : "hero-social-icon"
+                  likeIcon ? "hero-social-icon is-active" : "hero-social-icon"
                 }
                 key={index}
                 src={image}
