@@ -17,12 +17,23 @@ export default function Strava() {
         <li>A personalized description is added automatically</li>
       </ol>
 
-      <h2>Features</h2>
+      <h2>Project Structure</h2>
+      <pre className="strava-tree">{`app/
+├── api/
+│   └── webhook/
+│       └── route.ts          # Webhook endpoint
+├── services/
+│   ├── strava.service.ts     # Strava API integration
+│   └── ai.service.ts         # Gemini AI generation
+└── config/
+    └── constants.ts          # API URLs and config`}</pre>
+
+      <h2>Tech Stack</h2>
       <ul>
-        <li>Free and open source</li>
-        <li>Powered by Google Gemini AI</li>
-        <li>Customizable description prompts</li>
-        <li>Easy deployment on Vercel</li>
+        <li>Next.js API Routes</li>
+        <li>Google Gemini AI</li>
+        <li>Strava API</li>
+        <li>Vercel</li>
       </ul>
 
       <p>

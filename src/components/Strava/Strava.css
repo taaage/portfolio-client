@@ -45,3 +45,14 @@
 .strava-page a:hover {
   text-decoration: underline;
 }
+
+.strava-tree {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(100, 255, 218, 0.15);
+  border-radius: 8px;
+  padding: 1.25em 1.5em;
+  font-size: 0.85rem;
+  line-height: 1.6;
+  overflow-x: auto;
+  color: #64ffda;
+}

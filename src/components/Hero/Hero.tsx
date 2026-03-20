@@ -25,18 +25,8 @@ const Hero = () => {
     { text: "Tigge Nilsson." },
     { text: "I build things for the web." },
     {
-      text: " I'm a software engineer specializing in React, crafting thoughtful user interfaces and resilient front-end systems. I care about accessibility, performance, and clear UX, and I enjoy collaborating across product and design to ship meaningful experiences. Right now I'm focused on building human-friendly products at ",
+      text: " I'm a software engineer specializing in React, crafting thoughtful user interfaces and resilient front-end systems. I care about accessibility, performance, and clear UX, and I enjoy collaborating across product and design to ship meaningful experiences. See small projects below! Enjoy!",
       noBreak: true,
-      children: (
-        <a
-          className="hero-link green-color"
-          href="https://www.ericsson.com/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Ericsson.
-        </a>
-      ),
     },
   ];
 
