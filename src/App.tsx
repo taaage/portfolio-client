@@ -2,6 +2,8 @@ import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
 import Hero from "./components/Hero/Hero";
 import Resume from "./components/Resume/Resume";
 import Work from "./components/Work/Work";
+import Books from "./components/Books/Books";
+import Strava from "./components/Strava/Strava";
 
 import "./App.css";
 
@@ -22,6 +24,8 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/resume" element={<Resume />} />
+        <Route path="/books" element={<Books />} />
+        <Route path="/strava" element={<Strava />} />
       </Routes>
     </BrowserRouter>
   );
