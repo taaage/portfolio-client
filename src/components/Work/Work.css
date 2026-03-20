@@ -12,12 +12,6 @@
   color: #d1a2f9;
 }
 
-.work-list {
-  display: flex;
-  flex-direction: column;
-  gap: 2em;
-}
-
 .work-timeline {
   display: flex;
   flex-direction: column;
@@ -55,6 +49,7 @@
 .work-item h3 {
   margin: 0;
   font-size: 1.35rem;
+  font-weight: 600;
   color: #ffffff;
   transition: color 200ms ease;
 }
@@ -89,6 +84,10 @@
   transition: transform 200ms ease;
 }
 
+.work-item:hover .work-arrow {
+  transform: translateX(4px);
+}
+
 .work-item .work-wip {
   font-size: 0.7rem;
   font-weight: 600;
@@ -98,10 +97,6 @@
   background: #da3633;
   padding: 0.15em 0.6em;
   border-radius: 999px;
-}
-
-.work-item:hover .work-arrow {
-  transform: translateX(4px);
 }
 
 @media screen and (max-width: 720px) {

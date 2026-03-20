@@ -25,12 +25,6 @@
   gap: 0.4em;
 }
 
-.resume-icon {
-  width: 1em;
-  height: 1em;
-  color: #ffffff;
-}
-
 .resume-item {
   margin-bottom: 1.5em;
 }
@@ -61,25 +55,10 @@
   line-height: 1.6;
 }
 
-.resume-tags {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 0.6em;
-}
-
 .resume-interests {
   display: flex;
   flex-direction: column;
   gap: 0.75em;
-}
-
-.resume-tag {
-  border: 1px solid rgba(100, 255, 218, 0.18);
-  border-radius: 999px;
-  padding: 0.35em 1em;
-  font-size: 0.85rem;
-  color: #cdd6e8;
 }
 
 @media screen and (max-width: 720px) {
