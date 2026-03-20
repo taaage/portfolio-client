@@ -13,6 +13,14 @@ type WorkItem = {
 const Work = () => {
   const workItems: WorkItem[] = [
     {
+      title: "Home Assistant",
+      description: "Smart home automation and custom integrations.",
+      stack: "TBD",
+      to: "/home-assistant",
+      year: "2026",
+      wip: true,
+    },
+    {
       title: "Strava AI Descriptions",
       description: "Automatically generates AI-powered descriptions for Strava activities using webhooks and Google Gemini.",
       stack: "Next.js · Google Gemini",
@@ -29,23 +37,34 @@ const Work = () => {
     },
   ];
 
+  const grouped = workItems.reduce<Record<string, WorkItem[]>>((acc, item) => {
+    (acc[item.year] ??= []).push(item);
+    return acc;
+  }, {});
+
+  const years = Object.keys(grouped).sort((a, b) => b.localeCompare(a));
+
   return (
     <section className="section-work">
       <h2 className="work-title">Projects</h2>
       <div className="work-timeline">
-        {workItems.map((item) => (
-          <div key={item.title} className="work-timeline-item">
-            <span className="work-year">{item.year}</span>
+        {years.map((year) => (
+          <div key={year} className="work-timeline-group">
+            <span className="work-year">{year}</span>
             <div className="work-timeline-line" />
-            <Link to={item.to} className="work-item">
-              <div className="work-item-header">
-                <h3>{item.title}</h3>
-                {item.wip && <span className="work-wip">Work in Progress</span>}
-                <div className="work-arrow">→</div>
-              </div>
-              <p>{item.description}</p>
-              <span>{item.stack}</span>
-            </Link>
+            <div className="work-timeline-projects">
+              {grouped[year].map((item) => (
+                <Link key={item.title} to={item.to} className="work-item">
+                  <div className="work-item-header">
+                    <h3>{item.title}</h3>
+                    {item.wip && <span className="work-wip">Work in Progress</span>}
+                    <div className="work-arrow">→</div>
+                  </div>
+                  <p>{item.description}</p>
+                  <span>{item.stack}</span>
+                </Link>
+              ))}
+            </div>
           </div>
         ))}
       </div>

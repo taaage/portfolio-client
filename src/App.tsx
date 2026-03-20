@@ -4,6 +4,7 @@ import Resume from "./components/Resume/Resume";
 import Work from "./components/Work/Work";
 import Books from "./components/Books/Books";
 import Strava from "./components/Strava/Strava";
+import HomeAssistant from "./components/HomeAssistant/HomeAssistant";
 
 import "./App.css";
 
@@ -26,6 +27,7 @@ const App = () => {
         <Route path="/resume" element={<Resume />} />
         <Route path="/books" element={<Books />} />
         <Route path="/strava" element={<Strava />} />
+        <Route path="/home-assistant" element={<HomeAssistant />} />
       </Routes>
     </BrowserRouter>
   );

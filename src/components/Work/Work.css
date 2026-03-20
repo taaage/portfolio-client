@@ -18,10 +18,17 @@
   gap: 2em;
 }
 
-.work-timeline-item {
+.work-timeline-group {
   display: flex;
   align-items: flex-start;
   gap: 1.5em;
+}
+
+.work-timeline-projects {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  flex: 1;
 }
 
 .work-year {
