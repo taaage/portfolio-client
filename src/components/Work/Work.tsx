@@ -15,7 +15,7 @@ const Work = () => {
       title: "Strava AI Descriptions",
       description: "Automatically generates AI-powered descriptions for Strava activities using webhooks and Google Gemini.",
       stack: "Next.js · Google Gemini",
-      link: "https://roastmyride.vercel.app/",
+      link: "https://projects.tiggenilsson.se/",
     },
   ];
 
