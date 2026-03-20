@@ -1,4 +1,4 @@
-.ha-page {
+.coming-soon-page {
   max-width: 680px;
   margin: 0 auto;
   padding: 6em 2em 4em;
@@ -6,7 +6,7 @@
   line-height: 1.7;
 }
 
-.ha-page h1 {
+.coming-soon-page h1 {
   font-family: "Coolvetica";
   font-size: clamp(2rem, 4vw, 3rem);
   color: #d1a2f9;

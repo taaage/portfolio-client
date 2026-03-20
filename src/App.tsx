@@ -1,10 +1,11 @@
 import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
+import Books from "./components/Books/Books";
+import ComingSoon from "./components/ComingSoon/ComingSoon";
 import Hero from "./components/Hero/Hero";
 import Resume from "./components/Resume/Resume";
-import Work from "./components/Work/Work";
-import Books from "./components/Books/Books";
 import Strava from "./components/Strava/Strava";
-import HomeAssistant from "./components/HomeAssistant/HomeAssistant";
+import Work from "./components/Work/Work";
+import { featureFlags } from "./featureFlags";
 
 import "./App.css";
 
@@ -25,9 +26,36 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/resume" element={<Resume />} />
-        <Route path="/books" element={<Books />} />
-        <Route path="/strava" element={<Strava />} />
-        <Route path="/home-assistant" element={<HomeAssistant />} />
+        <Route
+          path="/books"
+          element={
+            featureFlags.books ? (
+              <Books />
+            ) : (
+              <ComingSoon title="Lowes Book Library 📚" />
+            )
+          }
+        />
+        <Route
+          path="/strava"
+          element={
+            featureFlags.strava ? (
+              <Strava />
+            ) : (
+              <ComingSoon title="Strava AI Descriptions 🤖" />
+            )
+          }
+        />
+        <Route
+          path="/home-assistant"
+          element={
+            featureFlags.homeAssistant ? (
+              <div />
+            ) : (
+              <ComingSoon title="Home Assistant 🏠" />
+            )
+          }
+        />
       </Routes>
     </BrowserRouter>
   );
