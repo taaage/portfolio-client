@@ -44,18 +44,9 @@ const Hero = () => {
 
   const socialLinks: SocialLink[] = [
     {
-      image: youtube,
-      alt: "youtube",
-      url: "https://www.youtube.com/@tiggenilsson",
-    },{
       image: linkedinWhite,
       alt: "linkedin",
       url: "https://www.linkedin.com/tigge-nilsson",
-    },
-    {
-      image: instagram,
-      alt: "instagram",
-      url: "https://www.instagram.com/yolotigge",
     },
     {
       image: github,
