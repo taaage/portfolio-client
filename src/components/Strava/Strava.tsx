@@ -3,7 +3,7 @@ import "./Strava.css";
 export default function Strava() {
   return (
     <div className="strava-page">
-      <h1>🤖 Strava AI Descriptions <span className="strava-author">by taaage</span></h1>
+      <h1>Strava AI Descriptions 🤖</h1>
       <p>
         This app automatically generates AI-powered descriptions for your Strava
         activities using webhooks and Google Gemini.
