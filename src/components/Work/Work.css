@@ -18,6 +18,35 @@
   gap: 2em;
 }
 
+.work-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.work-timeline-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5em;
+}
+
+.work-year {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #64ffda;
+  letter-spacing: 0.06em;
+  min-width: 3.5em;
+  padding-top: 0.15em;
+}
+
+.work-timeline-line {
+  width: 2px;
+  align-self: stretch;
+  background: rgba(100, 255, 218, 0.2);
+  border-radius: 1px;
+  flex-shrink: 0;
+}
+
 .work-item {
   text-decoration: none;
   display: block;
