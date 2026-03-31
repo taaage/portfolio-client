@@ -1,20 +1,31 @@
 :root {
-  --color-bg: #040811b5;
+  --color-bg: #585858;
   --color-text: #cdd6e8;
   --color-text-bright: #ffffff;
   --color-text-muted: #a8b2d1;
   --color-text-faint: rgba(205, 214, 232, 0.4);
+  --color-text-placeholder: rgba(205, 214, 232, 0.35);
   --color-heading: #d8d2e6;
   --color-accent: #64ffda;
   --color-accent-muted: rgba(100, 255, 218, 0.85);
+  --color-accent-border: rgba(100, 255, 218, 0.25);
+  --color-accent-border-strong: rgba(100, 255, 218, 0.4);
+  --color-accent-hover: rgba(100, 255, 218, 0.08);
+  --color-accent-badge: rgba(100, 255, 218, 0.3);
   --color-purple: #d1a2f9;
   --color-purple-muted: rgba(209, 162, 249, 0.15);
   --color-red: #da3633;
+  --color-red-border: rgba(218, 54, 51, 0.5);
+  --color-red-hover: rgba(218, 54, 51, 0.1);
   --color-border: rgba(100, 255, 218, 0.15);
   --color-border-subtle: rgba(100, 255, 218, 0.08);
+  --color-border-faint: rgba(100, 255, 218, 0.1);
   --color-surface: rgba(255, 255, 255, 0.03);
+  --color-surface-input: rgba(255, 255, 255, 0.04);
   --color-surface-hover: rgba(255, 255, 255, 0.05);
+  --color-surface-inset: rgba(15, 31, 61, 0.6);
   --color-surface-accent: rgba(100, 255, 218, 0.12);
   --color-surface-accent-hover: rgba(100, 255, 218, 0.2);
   --color-line: rgba(100, 255, 218, 0.2);
+  --color-focus-ring: rgba(100, 255, 218, 0.15);
 }

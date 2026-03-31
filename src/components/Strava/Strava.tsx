@@ -2,7 +2,7 @@ import "./Strava.css";
 
 export default function Strava() {
   return (
-    <div className="strava-page">
+    <div className="content-page strava-page">
       <h1>Strava AI Descriptions 🤖</h1>
       <p>
         This app automatically generates AI-powered descriptions for your Strava

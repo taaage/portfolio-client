@@ -1,9 +1,6 @@
 .books-page {
-  font-family: "Consonlas", "Courier New", monospace;
   padding: 30px;
-  background: transparent;
   color: var(--color-text);
-  min-height: 100vh;
 }
 .books-page .header {
   display: flex;
@@ -26,7 +23,7 @@
 }
 .books-page button {
   padding: 8px 16px;
-  border: 1px solid rgba(100, 255, 218, 0.25);
+  border: 1px solid var(--color-accent-border);
   border-radius: 6px;
   font-family: inherit;
   font-size: 0.875rem;
@@ -36,15 +33,12 @@
   background: var(--color-surface-hover);
 }
 .books-page button:hover {
-  background: rgba(100, 255, 218, 0.08);
+  background: var(--color-accent-hover);
   color: var(--color-accent);
-}
-.books-page .controls button:first-child {
-  background: var(--color-surface-hover);
 }
 .books-page .controls button:last-child {
   background: var(--color-surface-accent);
-  border-color: rgba(100, 255, 218, 0.4);
+  border-color: var(--color-accent-border-strong);
   color: var(--color-accent);
 }
 .books-page .controls button:last-child:hover {
@@ -96,7 +90,7 @@
   justify-content: center;
   font-size: 2rem;
   font-weight: 600;
-  color: #fff;
+  color: var(--color-text-bright);
 }
 .books-page .book .info {
   flex: 1;
@@ -106,32 +100,26 @@
   font-weight: 600;
 }
 .books-page .book p {
-  color: var(--color-text);
   font-size: 0.875rem;
 }
 .books-page .actions {
   display: flex;
   gap: 8px;
 }
-.books-page .actions button:first-child {
-  background: var(--color-surface-hover);
-}
 .books-page .actions .comment-btn {
   display: flex;
   align-items: center;
   gap: 4px;
-  background: var(--color-surface-hover);
 }
 .books-page .actions .comment-btn span {
   font-size: 0.75rem;
 }
 .books-page .actions button:last-child {
-  background: var(--color-surface-hover);
   color: var(--color-red);
-  border-color: rgba(218, 54, 51, 0.5);
+  border-color: var(--color-red-border);
 }
 .books-page .actions button:last-child:hover {
-  background: rgba(218, 54, 51, 0.1);
+  background: var(--color-red-hover);
 }
 .books-page .timeline {
   margin-top: 12px;
@@ -164,7 +152,7 @@
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background: rgba(100, 255, 218, 0.3);
+  background: var(--color-accent-badge);
   border: 2px solid var(--color-bg);
   z-index: 1;
 }
@@ -179,14 +167,11 @@
   gap: 6px;
   padding: 8px 12px;
   background: var(--color-surface);
-  border-bottom: 1px solid rgba(100, 255, 218, 0.1);
+  border-bottom: 1px solid var(--color-border-faint);
   font-size: 0.8rem;
 }
 .books-page .timeline-header strong {
   color: var(--color-accent);
-}
-.books-page .timeline-header span {
-  color: var(--color-text);
 }
 .books-page .timeline-header time {
   color: var(--color-text-faint);
@@ -206,16 +191,15 @@
 }
 .books-page .timeline-content {
   padding: 10px 12px;
-  color: var(--color-text);
   font-size: 0.85rem;
-  background: rgba(15, 31, 61, 0.6);
+  background: var(--color-surface-inset);
 }
 .books-page .comment-form {
   display: flex;
   flex-direction: column;
   gap: 6px;
   padding: 10px 12px;
-  background: rgba(15, 31, 61, 0.6);
+  background: var(--color-surface-inset);
 }
 .books-page .comment-form input,
 .books-page .comment-form textarea {
@@ -224,7 +208,7 @@
   border-radius: 6px;
   font-family: inherit;
   font-size: 0.8rem;
-  background: rgba(255, 255, 255, 0.04);
+  background: var(--color-surface-input);
   color: var(--color-text);
   resize: vertical;
 }
@@ -236,7 +220,7 @@
 .books-page .comment-form button {
   align-self: flex-end;
   background: var(--color-surface-accent);
-  border-color: rgba(100, 255, 218, 0.4);
+  border-color: var(--color-accent-border-strong);
   color: var(--color-accent);
   font-size: 0.8rem;
   padding: 6px 12px;
@@ -264,16 +248,16 @@
   border-radius: 6px;
   font-family: inherit;
   font-size: 0.875rem;
-  background: rgba(15, 31, 61, 0.6);
+  background: var(--color-surface-inset);
   color: var(--color-text);
 }
 .books-page .form input::placeholder {
-  color: rgba(205, 214, 232, 0.35);
+  color: var(--color-text-placeholder);
 }
 .books-page .form input:focus {
   outline: none;
   border-color: var(--color-accent);
-  box-shadow: 0 0 0 3px rgba(100, 255, 218, 0.15);
+  box-shadow: 0 0 0 3px var(--color-focus-ring);
 }
 .books-page .form .error {
   display: block;
@@ -287,12 +271,9 @@
 }
 .books-page .form .buttons button:first-child {
   background: var(--color-surface-accent);
-  border-color: rgba(100, 255, 218, 0.4);
+  border-color: var(--color-accent-border-strong);
   color: var(--color-accent);
 }
 .books-page .form .buttons button:first-child:hover {
   background: var(--color-surface-accent-hover);
-}
-.books-page .form .buttons button:last-child {
-  background: var(--color-surface-hover);
 }

@@ -10,10 +10,10 @@ import { featureFlags } from "./featureFlags";
 import "./App.css";
 
 const Home = () => (
-  <div className="page-home">
+  <>
     <Hero />
     <Work />
-  </div>
+  </>
 );
 
 const App = () => {
