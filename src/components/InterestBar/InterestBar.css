@@ -7,7 +7,7 @@
 
 .interest-label {
   font-size: 0.95rem;
-  color: #cdd6e8;
+  color: var(--color-text);
   min-width: 150px;
 }
 
@@ -21,10 +21,10 @@
   height: 20px;
   flex: 1;
   border-radius: 3px;
-  background: rgba(209, 162, 249, 0.15);
+  background: var(--color-purple-muted);
   transition: background 300ms ease;
 }
 
 .interest-segment.filled {
-  background: #d1a2f9;
+  background: var(--color-purple);
 }

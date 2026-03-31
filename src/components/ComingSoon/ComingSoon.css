@@ -2,13 +2,13 @@
   max-width: 680px;
   margin: 0 auto;
   padding: 6em 2em 4em;
-  color: #cdd6e8;
+  color: var(--color-text);
   line-height: 1.7;
 }
 
 .coming-soon-page h1 {
   font-family: "Coolvetica";
   font-size: clamp(2rem, 4vw, 3rem);
-  color: #d1a2f9;
+  color: var(--color-purple);
   margin-bottom: 0.5em;
 }

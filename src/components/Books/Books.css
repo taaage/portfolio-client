@@ -1,10 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
-
 .books-page {
   font-family: "Consonlas", "Courier New", monospace;
   padding: 30px;
   background: transparent;
-  color: #cdd6e8;
+  color: var(--color-text);
   min-height: 100vh;
 }
 .books-page .header {
@@ -17,7 +15,7 @@
 .books-page h1 {
   font-size: 2rem;
   font-weight: 600;
-  color: #d1a2f9;
+  color: var(--color-purple);
   font-family: "Coolvetica";
 }
 .books-page .controls {
@@ -34,23 +32,23 @@
   font-size: 0.875rem;
   font-weight: 500;
   cursor: pointer;
-  color: #cdd6e8;
-  background: rgba(255, 255, 255, 0.05);
+  color: var(--color-text);
+  background: var(--color-surface-hover);
 }
 .books-page button:hover {
   background: rgba(100, 255, 218, 0.08);
-  color: #64ffda;
+  color: var(--color-accent);
 }
 .books-page .controls button:first-child {
-  background: rgba(255, 255, 255, 0.05);
+  background: var(--color-surface-hover);
 }
 .books-page .controls button:last-child {
-  background: rgba(100, 255, 218, 0.12);
+  background: var(--color-surface-accent);
   border-color: rgba(100, 255, 218, 0.4);
-  color: #64ffda;
+  color: var(--color-accent);
 }
 .books-page .controls button:last-child:hover {
-  background: rgba(100, 255, 218, 0.2);
+  background: var(--color-surface-accent-hover);
 }
 .books-page .books {
   display: flex;
@@ -58,14 +56,14 @@
   gap: 1px;
   max-width: 900px;
   margin: 0 auto;
-  border: 1px solid rgba(100, 255, 218, 0.15);
+  border: 1px solid var(--color-border);
   border-radius: 6px;
   overflow: hidden;
 }
 .books-page .book {
-  background: rgba(255, 255, 255, 0.03);
+  background: var(--color-surface);
   padding: 16px;
-  border-bottom: 1px solid rgba(100, 255, 218, 0.08);
+  border-bottom: 1px solid var(--color-border-subtle);
 }
 .books-page .book:last-child {
   border-bottom: none;
@@ -85,7 +83,7 @@
   width: 90px;
   height: 130px;
   border-radius: 6px;
-  border: 1px solid rgba(209, 162, 249, 0.2);
+  border: 1px solid var(--color-purple-muted);
   overflow: hidden;
   flex-shrink: 0;
 }
@@ -104,11 +102,11 @@
   flex: 1;
 }
 .books-page .book h3 {
-  color: #ffffff;
+  color: var(--color-text-bright);
   font-weight: 600;
 }
 .books-page .book p {
-  color: #cdd6e8;
+  color: var(--color-text);
   font-size: 0.875rem;
 }
 .books-page .actions {
@@ -116,20 +114,20 @@
   gap: 8px;
 }
 .books-page .actions button:first-child {
-  background: rgba(255, 255, 255, 0.05);
+  background: var(--color-surface-hover);
 }
 .books-page .actions .comment-btn {
   display: flex;
   align-items: center;
   gap: 4px;
-  background: rgba(255, 255, 255, 0.05);
+  background: var(--color-surface-hover);
 }
 .books-page .actions .comment-btn span {
   font-size: 0.75rem;
 }
 .books-page .actions button:last-child {
-  background: rgba(255, 255, 255, 0.05);
-  color: #da3633;
+  background: var(--color-surface-hover);
+  color: var(--color-red);
   border-color: rgba(218, 54, 51, 0.5);
 }
 .books-page .actions button:last-child:hover {
@@ -138,7 +136,7 @@
 .books-page .timeline {
   margin-top: 12px;
   padding-top: 12px;
-  border-top: 1px solid rgba(100, 255, 218, 0.08);
+  border-top: 1px solid var(--color-border-subtle);
   position: relative;
 }
 .books-page .timeline::before {
@@ -148,7 +146,7 @@
   top: 12px;
   bottom: 0;
   width: 2px;
-  background: rgba(100, 255, 218, 0.2);
+  background: var(--color-line);
   border-radius: 1px;
 }
 .books-page .timeline-item {
@@ -167,11 +165,11 @@
   height: 12px;
   border-radius: 50%;
   background: rgba(100, 255, 218, 0.3);
-  border: 2px solid #071630;
+  border: 2px solid var(--color-bg);
   z-index: 1;
 }
 .books-page .timeline-body {
-  border: 1px solid rgba(100, 255, 218, 0.15);
+  border: 1px solid var(--color-border);
   border-radius: 6px;
   overflow: hidden;
 }
@@ -180,18 +178,18 @@
   align-items: center;
   gap: 6px;
   padding: 8px 12px;
-  background: rgba(255, 255, 255, 0.03);
+  background: var(--color-surface);
   border-bottom: 1px solid rgba(100, 255, 218, 0.1);
   font-size: 0.8rem;
 }
 .books-page .timeline-header strong {
-  color: #64ffda;
+  color: var(--color-accent);
 }
 .books-page .timeline-header span {
-  color: #cdd6e8;
+  color: var(--color-text);
 }
 .books-page .timeline-header time {
-  color: rgba(205, 214, 232, 0.4);
+  color: var(--color-text-faint);
   font-size: 0.75rem;
 }
 .books-page .timeline-header button {
@@ -200,86 +198,86 @@
   font-size: 0.7rem;
   background: transparent;
   border: none;
-  color: rgba(205, 214, 232, 0.4);
+  color: var(--color-text-faint);
 }
 .books-page .timeline-header button:hover {
-  color: #da3633;
+  color: var(--color-red);
   background: transparent;
 }
 .books-page .timeline-content {
   padding: 10px 12px;
-  color: #cdd6e8;
+  color: var(--color-text);
   font-size: 0.85rem;
-  background: rgba(7, 22, 48, 0.6);
+  background: rgba(15, 31, 61, 0.6);
 }
 .books-page .comment-form {
   display: flex;
   flex-direction: column;
   gap: 6px;
   padding: 10px 12px;
-  background: rgba(7, 22, 48, 0.6);
+  background: rgba(15, 31, 61, 0.6);
 }
 .books-page .comment-form input,
 .books-page .comment-form textarea {
   padding: 6px 10px;
-  border: 1px solid rgba(100, 255, 218, 0.2);
+  border: 1px solid var(--color-line);
   border-radius: 6px;
   font-family: inherit;
   font-size: 0.8rem;
   background: rgba(255, 255, 255, 0.04);
-  color: #cdd6e8;
+  color: var(--color-text);
   resize: vertical;
 }
 .books-page .comment-form input:focus,
 .books-page .comment-form textarea:focus {
   outline: none;
-  border-color: #64ffda;
+  border-color: var(--color-accent);
 }
 .books-page .comment-form button {
   align-self: flex-end;
-  background: rgba(100, 255, 218, 0.12);
+  background: var(--color-surface-accent);
   border-color: rgba(100, 255, 218, 0.4);
-  color: #64ffda;
+  color: var(--color-accent);
   font-size: 0.8rem;
   padding: 6px 12px;
 }
 .books-page .comment-form button:hover {
-  background: rgba(100, 255, 218, 0.2);
+  background: var(--color-surface-accent-hover);
 }
 .books-page .comment-form .error {
-  color: #da3633;
+  color: var(--color-red);
   font-size: 0.75rem;
 }
 .books-page .form {
-  background: rgba(255, 255, 255, 0.03);
+  background: var(--color-surface);
   padding: 20px;
   border-radius: 6px;
   margin: 0 auto 24px;
   max-width: 400px;
-  border: 1px solid rgba(100, 255, 218, 0.15);
+  border: 1px solid var(--color-border);
 }
 .books-page .form input {
   width: 100%;
   padding: 8px 12px;
   margin-bottom: 10px;
-  border: 1px solid rgba(100, 255, 218, 0.2);
+  border: 1px solid var(--color-line);
   border-radius: 6px;
   font-family: inherit;
   font-size: 0.875rem;
-  background: rgba(7, 22, 48, 0.6);
-  color: #cdd6e8;
+  background: rgba(15, 31, 61, 0.6);
+  color: var(--color-text);
 }
 .books-page .form input::placeholder {
   color: rgba(205, 214, 232, 0.35);
 }
 .books-page .form input:focus {
   outline: none;
-  border-color: #64ffda;
+  border-color: var(--color-accent);
   box-shadow: 0 0 0 3px rgba(100, 255, 218, 0.15);
 }
 .books-page .form .error {
   display: block;
-  color: #da3633;
+  color: var(--color-red);
   font-size: 0.75rem;
   margin: -6px 0 8px;
 }
@@ -288,13 +286,13 @@
   gap: 10px;
 }
 .books-page .form .buttons button:first-child {
-  background: rgba(100, 255, 218, 0.12);
+  background: var(--color-surface-accent);
   border-color: rgba(100, 255, 218, 0.4);
-  color: #64ffda;
+  color: var(--color-accent);
 }
 .books-page .form .buttons button:first-child:hover {
-  background: rgba(100, 255, 218, 0.2);
+  background: var(--color-surface-accent-hover);
 }
 .books-page .form .buttons button:last-child {
-  background: rgba(255, 255, 255, 0.05);
+  background: var(--color-surface-hover);
 }

@@ -10,12 +10,12 @@
 .resume-title {
   font-family: "Coolvetica";
   font-size: clamp(2.4rem, 5vw, 3.8rem);
-  color: #d1a2f9;
+  color: var(--color-purple);
   margin: 0;
 }
 
 .resume-section h2 {
-  color: #64ffda;
+  color: var(--color-accent);
   font-size: clamp(1.6rem, 3vw, 2.2rem);
   font-family: "Coolvetica";
   letter-spacing: 0.04em;
@@ -41,17 +41,17 @@
   margin: 0;
   font-size: 1.1rem;
   font-weight: 700;
-  color: #d1a2f9;
+  color: var(--color-purple);
 }
 
 .resume-date {
   font-size: 0.85rem;
-  color: #a8b2d1;
+  color: var(--color-text-muted);
 }
 
 .resume-item p {
   margin: 0.25em 0 0;
-  color: #cdd6e8;
+  color: var(--color-text);
   line-height: 1.6;
 }
 

@@ -2,19 +2,19 @@
   max-width: 680px;
   margin: 0 auto;
   padding: 6em 2em 4em;
-  color: #cdd6e8;
+  color: var(--color-text);
   line-height: 1.7;
 }
 
 .strava-page h1 {
   font-family: "Coolvetica";
   font-size: clamp(2rem, 4vw, 3rem);
-  color: #d1a2f9;
+  color: var(--color-purple);
   margin-bottom: 0.5em;
 }
 
 .strava-page h2 {
-  color: #64ffda;
+  color: var(--color-accent);
   font-family: "Coolvetica";
   font-size: 1.4rem;
   margin: 1.5em 0 0.5em;
@@ -31,7 +31,7 @@
 }
 
 .strava-page a {
-  color: #64ffda;
+  color: var(--color-accent);
   text-decoration: none;
   font-weight: 600;
 }
@@ -41,12 +41,12 @@
 }
 
 .strava-tree {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(100, 255, 218, 0.15);
+  background: var(--color-surface-hover);
+  border: 1px solid var(--color-border);
   border-radius: 8px;
   padding: 1.25em 1.5em;
   font-size: 0.85rem;
   line-height: 1.6;
   overflow-x: auto;
-  color: #64ffda;
+  color: var(--color-accent);
 }
