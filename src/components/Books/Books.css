@@ -1,17 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
 
 .books-page {
-  font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: "Consonlas", "Courier New", monospace;
   padding: 30px;
-  background: #0d1117;
-  background-image:
-    radial-gradient(circle at 10% 20%, #da363310 0%, transparent 50%),
-    radial-gradient(circle at 90% 80%, #58a6ff10 0%, transparent 50%),
-    radial-gradient(circle at 50% 50%, #3fb95010 0%, transparent 50%),
-    radial-gradient(circle at 80% 10%, #bc8cff10 0%, transparent 50%),
-    radial-gradient(circle at 20% 90%, #d2992210 0%, transparent 50%);
-  background-attachment: fixed;
-  color: #e6edf3;
+  background: transparent;
+  color: #cdd6e8;
   min-height: 100vh;
 }
 .books-page .header {
@@ -24,7 +17,8 @@
 .books-page h1 {
   font-size: 2rem;
   font-weight: 600;
-  color: #e6edf3;
+  color: #d1a2f9;
+  font-family: "Coolvetica";
 }
 .books-page .controls {
   display: flex;
@@ -34,27 +28,29 @@
 }
 .books-page button {
   padding: 8px 16px;
-  border: 1px solid #30363d;
+  border: 1px solid rgba(100, 255, 218, 0.25);
   border-radius: 6px;
   font-family: inherit;
   font-size: 0.875rem;
   font-weight: 500;
   cursor: pointer;
-  color: #e6edf3;
-  background: #21262d;
+  color: #cdd6e8;
+  background: rgba(255, 255, 255, 0.05);
 }
 .books-page button:hover {
-  background: #30363d;
+  background: rgba(100, 255, 218, 0.08);
+  color: #64ffda;
 }
 .books-page .controls button:first-child {
-  background: #21262d;
+  background: rgba(255, 255, 255, 0.05);
 }
 .books-page .controls button:last-child {
-  background: #238636;
-  border-color: #238636;
+  background: rgba(100, 255, 218, 0.12);
+  border-color: rgba(100, 255, 218, 0.4);
+  color: #64ffda;
 }
 .books-page .controls button:last-child:hover {
-  background: #2ea043;
+  background: rgba(100, 255, 218, 0.2);
 }
 .books-page .books {
   display: flex;
@@ -62,14 +58,14 @@
   gap: 1px;
   max-width: 900px;
   margin: 0 auto;
-  border: 1px solid #30363d;
+  border: 1px solid rgba(100, 255, 218, 0.15);
   border-radius: 6px;
   overflow: hidden;
 }
 .books-page .book {
-  background: #161b22;
+  background: rgba(255, 255, 255, 0.03);
   padding: 16px;
-  border-bottom: 1px solid #21262d;
+  border-bottom: 1px solid rgba(100, 255, 218, 0.08);
 }
 .books-page .book:last-child {
   border-bottom: none;
@@ -89,7 +85,7 @@
   width: 90px;
   height: 130px;
   border-radius: 6px;
-  border: 1px solid #30363d;
+  border: 1px solid rgba(209, 162, 249, 0.2);
   overflow: hidden;
   flex-shrink: 0;
 }
@@ -108,11 +104,11 @@
   flex: 1;
 }
 .books-page .book h3 {
-  color: #e6edf3;
+  color: #ffffff;
   font-weight: 600;
 }
 .books-page .book p {
-  color: #8b949e;
+  color: #cdd6e8;
   font-size: 0.875rem;
 }
 .books-page .actions {
@@ -120,29 +116,29 @@
   gap: 8px;
 }
 .books-page .actions button:first-child {
-  background: #21262d;
+  background: rgba(255, 255, 255, 0.05);
 }
 .books-page .actions .comment-btn {
   display: flex;
   align-items: center;
   gap: 4px;
-  background: #21262d;
+  background: rgba(255, 255, 255, 0.05);
 }
 .books-page .actions .comment-btn span {
   font-size: 0.75rem;
 }
 .books-page .actions button:last-child {
-  background: #21262d;
-  color: #f85149;
-  border-color: #f85149;
+  background: rgba(255, 255, 255, 0.05);
+  color: #da3633;
+  border-color: rgba(218, 54, 51, 0.5);
 }
 .books-page .actions button:last-child:hover {
-  background: #f8514922;
+  background: rgba(218, 54, 51, 0.1);
 }
 .books-page .timeline {
   margin-top: 12px;
   padding-top: 12px;
-  border-top: 1px solid #21262d;
+  border-top: 1px solid rgba(100, 255, 218, 0.08);
   position: relative;
 }
 .books-page .timeline::before {
@@ -152,7 +148,8 @@
   top: 12px;
   bottom: 0;
   width: 2px;
-  background: #30363d;
+  background: rgba(100, 255, 218, 0.2);
+  border-radius: 1px;
 }
 .books-page .timeline-item {
   position: relative;
@@ -169,12 +166,12 @@
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background: #30363d;
-  border: 2px solid #161b22;
+  background: rgba(100, 255, 218, 0.3);
+  border: 2px solid #071630;
   z-index: 1;
 }
 .books-page .timeline-body {
-  border: 1px solid #30363d;
+  border: 1px solid rgba(100, 255, 218, 0.15);
   border-radius: 6px;
   overflow: hidden;
 }
@@ -183,18 +180,18 @@
   align-items: center;
   gap: 6px;
   padding: 8px 12px;
-  background: #161b22;
-  border-bottom: 1px solid #30363d;
+  background: rgba(255, 255, 255, 0.03);
+  border-bottom: 1px solid rgba(100, 255, 218, 0.1);
   font-size: 0.8rem;
 }
 .books-page .timeline-header strong {
-  color: #58a6ff;
+  color: #64ffda;
 }
 .books-page .timeline-header span {
-  color: #8b949e;
+  color: #cdd6e8;
 }
 .books-page .timeline-header time {
-  color: #484f58;
+  color: rgba(205, 214, 232, 0.4);
   font-size: 0.75rem;
 }
 .books-page .timeline-header button {
@@ -203,85 +200,86 @@
   font-size: 0.7rem;
   background: transparent;
   border: none;
-  color: #484f58;
+  color: rgba(205, 214, 232, 0.4);
 }
 .books-page .timeline-header button:hover {
-  color: #f85149;
+  color: #da3633;
   background: transparent;
 }
 .books-page .timeline-content {
   padding: 10px 12px;
-  color: #e6edf3;
+  color: #cdd6e8;
   font-size: 0.85rem;
-  background: #0d1117;
+  background: rgba(7, 22, 48, 0.6);
 }
 .books-page .comment-form {
   display: flex;
   flex-direction: column;
   gap: 6px;
   padding: 10px 12px;
-  background: #0d1117;
+  background: rgba(7, 22, 48, 0.6);
 }
 .books-page .comment-form input,
 .books-page .comment-form textarea {
   padding: 6px 10px;
-  border: 1px solid #30363d;
+  border: 1px solid rgba(100, 255, 218, 0.2);
   border-radius: 6px;
   font-family: inherit;
   font-size: 0.8rem;
-  background: #161b22;
-  color: #e6edf3;
+  background: rgba(255, 255, 255, 0.04);
+  color: #cdd6e8;
   resize: vertical;
 }
 .books-page .comment-form input:focus,
 .books-page .comment-form textarea:focus {
   outline: none;
-  border-color: #58a6ff;
+  border-color: #64ffda;
 }
 .books-page .comment-form button {
   align-self: flex-end;
-  background: #238636;
-  border-color: #238636;
+  background: rgba(100, 255, 218, 0.12);
+  border-color: rgba(100, 255, 218, 0.4);
+  color: #64ffda;
   font-size: 0.8rem;
   padding: 6px 12px;
 }
 .books-page .comment-form button:hover {
-  background: #2ea043;
+  background: rgba(100, 255, 218, 0.2);
 }
 .books-page .comment-form .error {
-  color: #f85149;
+  color: #da3633;
   font-size: 0.75rem;
 }
 .books-page .form {
-  background: #161b22;
+  background: rgba(255, 255, 255, 0.03);
   padding: 20px;
   border-radius: 6px;
   margin: 0 auto 24px;
   max-width: 400px;
-  border: 1px solid #30363d;
+  border: 1px solid rgba(100, 255, 218, 0.15);
 }
 .books-page .form input {
   width: 100%;
   padding: 8px 12px;
   margin-bottom: 10px;
-  border: 1px solid #30363d;
+  border: 1px solid rgba(100, 255, 218, 0.2);
   border-radius: 6px;
   font-family: inherit;
   font-size: 0.875rem;
-  background: #0d1117;
-  color: #e6edf3;
+  background: rgba(7, 22, 48, 0.6);
+  color: #cdd6e8;
 }
 .books-page .form input::placeholder {
-  color: #484f58;
+  color: rgba(205, 214, 232, 0.35);
 }
 .books-page .form input:focus {
   outline: none;
-  border-color: #58a6ff;
-  box-shadow: 0 0 0 3px #58a6ff33;
+  border-color: #64ffda;
+  box-shadow: 0 0 0 3px rgba(100, 255, 218, 0.15);
 }
 .books-page .form .error {
   display: block;
-  color: #f85149;
+  color: #da3633;
   font-size: 0.75rem;
   margin: -6px 0 8px;
 }
@@ -290,12 +288,13 @@
   gap: 10px;
 }
 .books-page .form .buttons button:first-child {
-  background: #238636;
-  border-color: #238636;
+  background: rgba(100, 255, 218, 0.12);
+  border-color: rgba(100, 255, 218, 0.4);
+  color: #64ffda;
 }
 .books-page .form .buttons button:first-child:hover {
-  background: #2ea043;
+  background: rgba(100, 255, 218, 0.2);
 }
 .books-page .form .buttons button:last-child {
-  background: #21262d;
+  background: rgba(255, 255, 255, 0.05);
 }

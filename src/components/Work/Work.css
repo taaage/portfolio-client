@@ -104,6 +104,8 @@
   background: #da3633;
   padding: 0.15em 0.6em;
   border-radius: 999px;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
 }
 
 @media screen and (max-width: 720px) {

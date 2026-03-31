@@ -1,0 +1,20 @@
+:root {
+  --color-bg: #040811b5;
+  --color-text: #cdd6e8;
+  --color-text-bright: #ffffff;
+  --color-text-muted: #a8b2d1;
+  --color-text-faint: rgba(205, 214, 232, 0.4);
+  --color-heading: #d8d2e6;
+  --color-accent: #64ffda;
+  --color-accent-muted: rgba(100, 255, 218, 0.85);
+  --color-purple: #d1a2f9;
+  --color-purple-muted: rgba(209, 162, 249, 0.15);
+  --color-red: #da3633;
+  --color-border: rgba(100, 255, 218, 0.15);
+  --color-border-subtle: rgba(100, 255, 218, 0.08);
+  --color-surface: rgba(255, 255, 255, 0.03);
+  --color-surface-hover: rgba(255, 255, 255, 0.05);
+  --color-surface-accent: rgba(100, 255, 218, 0.12);
+  --color-surface-accent-hover: rgba(100, 255, 218, 0.2);
+  --color-line: rgba(100, 255, 218, 0.2);
+}

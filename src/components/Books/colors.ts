@@ -1,7 +1,7 @@
 const spineColors = [
-  '#da3633','#58a6ff','#3fb950','#d29922','#bc8cff','#f78166','#79c0ff','#56d364',
-  '#db61a2','#f0883e','#a371f7','#3d8bfd','#e3b341','#8b949e','#7ee787','#ff7b72',
-  '#d2a8ff','#ffa657','#39d353','#6cb6ff',
+  '#d1a2f9','#64ffda','#da3633','#cdd6e8','#f78166','#79c0ff','#56d364',
+  '#db61a2','#f0883e','#a371f7','#e3b341','#7ee787','#ff7b72',
+  '#d2a8ff','#ffa657','#39d353','#6cb6ff','#d8d2e6','#3fb950','#bc8cff',
 ]
 
 export function hashColor(str: string) {
