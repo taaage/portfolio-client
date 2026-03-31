@@ -60,9 +60,7 @@ const Work = () => {
                 <Link key={item.title} to={item.to} className="work-item">
                   <div className="work-item-header">
                     <h3>{item.title}</h3>
-                    {item.wip && (
-                      <span className="work-wip">Work in Progress</span>
-                    )}
+                    {item.wip && <span className="work-wip">Ongoing</span>}
                     <div className="work-arrow">→</div>
                   </div>
                   <p>{item.description}</p>
