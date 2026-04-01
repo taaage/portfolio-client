@@ -5,6 +5,7 @@ import Hero from "./components/Hero/Hero";
 import Resume from "./components/Resume/Resume";
 import Strava from "./components/Strava/Strava";
 import Work from "./components/Work/Work";
+import HomeAssistant from "./components/HomeAssistant/HomeAssistant";
 import { featureFlags } from "./featureFlags";
 
 import "./App.css";
@@ -50,7 +51,7 @@ const App = () => {
           path="/home-assistant"
           element={
             featureFlags.homeAssistant ? (
-              <div />
+              <HomeAssistant />
             ) : (
               <ComingSoon title="Home Assistant 🏠" />
             )
