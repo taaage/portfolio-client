@@ -1,6 +1,6 @@
 import "./HomeAssistant.css";
 
-const DASHBOARD_URL = import.meta.env.VITE_HOME_ASSISTANT_URL ?? "http://localhost:5174";
+const DASHBOARD_URL = import.meta.env.VITE_HOME_ASSISTANT_URL ?? "https://home.tiggenilsson.se/";
 
 export default function HomeAssistant() {
   return (
