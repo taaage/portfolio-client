@@ -4,6 +4,7 @@ import ComingSoon from "./components/ComingSoon/ComingSoon";
 import Hero from "./components/Hero/Hero";
 import Resume from "./components/Resume/Resume";
 import Strava from "./components/Strava/Strava";
+import StravaDashboard from "./components/StravaDashboard/StravaDashboard";
 import Work from "./components/Work/Work";
 import HomeAssistant from "./components/HomeAssistant/HomeAssistant";
 import { featureFlags } from "./featureFlags";
@@ -38,7 +39,7 @@ const App = () => {
           }
         />
         <Route
-          path="/strava"
+          path="/strava-descriptions"
           element={
             featureFlags.strava ? (
               <Strava />
@@ -57,6 +58,7 @@ const App = () => {
             )
           }
         />
+        <Route path="/strava-dashboard" element={<StravaDashboard />} />
       </Routes>
     </BrowserRouter>
   );

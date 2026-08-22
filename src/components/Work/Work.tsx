@@ -14,6 +14,14 @@ type WorkItem = {
 const Work = () => {
   const workItems: WorkItem[] = [
     {
+      title: "Strava Dashboard",
+      description:
+        "Personal cycling dashboard with power records, weekly distance, and year progress tracking.",
+      stack: "Next.js · Strava API · Recharts",
+      to: "/strava-dashboard",
+      year: "2026",
+    },
+    {
       title: "Home Assistant",
       description: "Smart home automation and custom integrations.",
       stack: "Docker · Philips Hue",
@@ -26,7 +34,7 @@ const Work = () => {
       description:
         "Automatically generates AI-powered descriptions for Strava activities using webhooks and Google Gemini.",
       stack: "Next.js · Google Gemini",
-      to: "/strava",
+      to: "/strava-descriptions",
       year: "2026",
     },
     {
