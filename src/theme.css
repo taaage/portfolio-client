@@ -1,11 +1,12 @@
 :root {
-  --color-bg: #585858;
-  --color-text: #cdd6e8;
-  --color-text-bright: #ffffff;
-  --color-text-muted: #a8b2d1;
-  --color-text-faint: rgba(205, 214, 232, 0.4);
-  --color-text-placeholder: rgba(205, 214, 232, 0.35);
-  --color-heading: #d8d2e6;
+  /* Neutral scale aligned with strava-dashboard's dark palette */
+  --color-bg: #09090b;
+  --color-text: #a1a1aa;
+  --color-text-bright: #fafafa;
+  --color-text-muted: #71717a;
+  --color-text-faint: rgba(161, 161, 170, 0.4);
+  --color-text-placeholder: rgba(161, 161, 170, 0.35);
+  --color-heading: #fafafa;
   --color-accent: #64ffda;
   --color-accent-muted: rgba(100, 255, 218, 0.85);
   --color-accent-border: rgba(100, 255, 218, 0.25);

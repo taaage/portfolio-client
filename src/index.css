@@ -1,5 +1,9 @@
 @import "./theme.css";
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @font-face {
   font-family: "Consonlas";
   src: url("/fonts/CONSOLAB.ttf") format("truetype");
