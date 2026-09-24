@@ -12,8 +12,16 @@ const Resume = () => {
 
         <div className="resume-item">
           <div className="resume-item-header">
+            <h3>Software Engineer @ Skandia</h3>
+            <span className="resume-date">2026-09 – Ongoing</span>
+          </div>
+          <p>Building React (TypeScript) and .NET applications.</p>
+        </div>
+
+        <div className="resume-item">
+          <div className="resume-item-header">
             <h3>Software Engineer @ Ericsson</h3>
-            <span className="resume-date">2023-08 – Ongoing</span>
+            <span className="resume-date">2023-08 – 2026-09</span>
           </div>
           <p>
             Member of a DevSecOps team developing applications using React
