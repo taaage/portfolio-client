@@ -14,6 +14,14 @@ type WorkItem = {
 const Work = () => {
   const workItems: WorkItem[] = [
     {
+      title: "Road Bike Gear Calculator",
+      description:
+        "Compare road bike gear speeds across cadence, chainring, cassette, and tire combinations.",
+      stack: "React · Vite · TypeScript",
+      to: "/gear-calculator",
+      year: "2026",
+    },
+    {
       title: "Strava Dashboard",
       description:
         "Personal cycling dashboard with power records, weekly distance, and year progress tracking.",
