@@ -16,7 +16,7 @@ const Work = () => {
     {
       title: "Road Bike Gear Calculator",
       description:
-        "Compare road bike gear speeds across cadence, chainring, cassette, and tire combinations.",
+        "Compare bike gear speeds across cadence, chainring, cassette, and tire combinations.",
       stack: "React · Vite · TypeScript",
       to: "/gear-calculator",
       year: "2026",

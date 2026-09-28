@@ -9,7 +9,7 @@ export default function GearCalculator() {
     <iframe
       className="gear-calculator-frame"
       src={GEAR_CALCULATOR_URL}
-      title="Road Bike Gear Calculator"
+      title="Cycling Gear Calculator"
     />
   );
 }
