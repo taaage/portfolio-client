@@ -8,6 +8,7 @@ type WorkItem = {
   stack: string;
   to: string;
   year: string;
+  category: string;
   wip?: boolean;
 };
 
@@ -20,6 +21,7 @@ const Work = () => {
       stack: "React · Vite · TypeScript",
       to: "/gear-calculator",
       year: "2026",
+      category: "Cycling tool",
     },
     {
       title: "Strava Dashboard",
@@ -28,6 +30,7 @@ const Work = () => {
       stack: "Next.js · Strava API · Recharts",
       to: "/strava-dashboard",
       year: "2026",
+      category: "Data visualization",
     },
     {
       title: "Home Assistant",
@@ -35,6 +38,7 @@ const Work = () => {
       stack: "Docker · Philips Hue",
       to: "/home-assistant",
       year: "2026",
+      category: "Home automation",
       wip: true,
     },
     {
@@ -44,6 +48,7 @@ const Work = () => {
       stack: "Next.js · Google Gemini",
       to: "/strava-descriptions",
       year: "2026",
+      category: "AI integration",
     },
     {
       title: "Lowes Book Library",
@@ -52,39 +57,36 @@ const Work = () => {
       stack: "React · .NET · C#",
       to: "/books",
       year: "2025",
+      category: "Family project",
       wip: true,
     },
   ];
 
-  const grouped = workItems.reduce<Record<string, WorkItem[]>>((acc, item) => {
-    (acc[item.year] ??= []).push(item);
-    return acc;
-  }, {});
-
-  const years = Object.keys(grouped).sort((a, b) => b.localeCompare(a));
-
   return (
-    <section className="section-work">
-      <h2 className="work-title">Projects</h2>
-      <div className="work-timeline">
-        {years.map((year) => (
-          <div key={year} className="work-timeline-group">
-            <span className="work-year">{year}</span>
-            <div className="work-timeline-line" />
-            <div className="work-timeline-projects">
-              {grouped[year].map((item) => (
-                <Link key={item.title} to={item.to} className="work-item">
-                  <div className="work-item-header">
-                    <h3>{item.title}</h3>
-                    {item.wip && <span className="work-wip">Ongoing</span>}
-                    <div className="work-arrow">→</div>
-                  </div>
-                  <p>{item.description}</p>
-                  <span>{item.stack}</span>
-                </Link>
-              ))}
+    <section className="section-work" id="projects" aria-labelledby="work-title">
+      <div className="work-heading">
+        <div>
+          <p className="work-kicker">A few things I’ve made</p>
+          <h2 className="work-title" id="work-title">Selected work<span>.</span></h2>
+        </div>
+        <p className="work-intro">Small tools, personal projects, and experiments built around problems worth solving.</p>
+      </div>
+      <div className="work-grid">
+        {workItems.map((item, index) => (
+          <Link key={item.title} to={item.to} className={`work-item${index === 0 ? " work-item-featured" : ""}`}>
+            <div className="work-item-topline">
+              <span className="work-index">{String(index + 1).padStart(2, "0")}</span>
+              <span className="work-category">{item.category}</span>
+              {item.wip && <span className="work-wip">In progress</span>}
+              <span className="work-arrow" aria-hidden="true">↗</span>
             </div>
-          </div>
+            <h3>{item.title}</h3>
+            <p>{item.description}</p>
+            <div className="work-item-footer">
+              <span>{item.stack}</span>
+              <time>{item.year}</time>
+            </div>
+          </Link>
         ))}
       </div>
     </section>
