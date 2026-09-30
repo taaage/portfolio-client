@@ -24,6 +24,15 @@ const Work = () => {
       category: "Cycling tool",
     },
     {
+      title: "Design System",
+      description:
+        "A shared visual foundation and color-token catalog for the tools I build.",
+      stack: "React · TypeScript · CSS",
+      to: "/design-system",
+      year: "2026",
+      category: "Design system",
+    },
+    {
       title: "Strava Dashboard",
       description:
         "Personal cycling dashboard with power records, weekly distance, and year progress tracking.",

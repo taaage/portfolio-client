@@ -1,6 +1,7 @@
 import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
 import Books from "./components/Books/Books";
 import ComingSoon from "./components/ComingSoon/ComingSoon";
+import DesignSystem from "./components/DesignSystem/DesignSystem";
 import GearCalculator from "./components/GearCalculator/GearCalculator";
 import Hero from "./components/Hero/Hero";
 import Resume from "./components/Resume/Resume";
@@ -61,6 +62,7 @@ const App = () => {
         />
         <Route path="/gear-calculator" element={<GearCalculator />} />
         <Route path="/strava-dashboard" element={<StravaDashboard />} />
+        <Route path="/design-system" element={<DesignSystem />} />
       </Routes>
     </BrowserRouter>
   );
