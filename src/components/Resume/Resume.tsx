@@ -4,11 +4,16 @@ import "./Resume.css";
 
 const Resume = () => {
   return (
-    <div className="section-resume">
-      <h1 className="resume-title">Resume</h1>
+    <main className="section-resume" aria-labelledby="resume-title">
+      <header className="resume-heading">
+        <p className="resume-kicker">Background</p>
+        <h1 className="resume-title" id="resume-title">
+          CV / Resume<span>.</span>
+        </h1>
+      </header>
 
       <section className="resume-section">
-        <h2>Experience 💼</h2>
+        <h2>Experience</h2>
 
         <div className="resume-item">
           <div className="resume-item-header">
@@ -86,7 +91,7 @@ const Resume = () => {
       </section>
 
       <section className="resume-section">
-        <h2>Education 🎓</h2>
+        <h2>Education</h2>
 
         <div className="resume-item">
           <div className="resume-item-header">
@@ -122,7 +127,7 @@ const Resume = () => {
       </section>
 
       <section className="resume-section">
-        <h2>Volunteering 🤝</h2>
+        <h2>Volunteering</h2>
 
         <div className="resume-item">
           <div className="resume-item-header">
@@ -149,7 +154,7 @@ const Resume = () => {
       </section>
 
       <section className="resume-section">
-        <h2>Skills 🛠️</h2>
+        <h2>Skills</h2>
         <div className="resume-interests">
           <InterestBar label="React (JS/TS)" level={9} color="#64ffda" />
           <InterestBar label="Node.js (JS/TS)" level={8} color="#64ffda" />
@@ -162,7 +167,7 @@ const Resume = () => {
       </section>
 
       <section className="resume-section">
-        <h2>Personal Interests 🚴</h2>
+        <h2>Personal Interests</h2>
         <div className="resume-interests">
           <InterestBar label="Cooking" level={6} />
           <InterestBar label="Skiing" level={9} />
@@ -170,7 +175,7 @@ const Resume = () => {
           <InterestBar label="Cycling" level={10} />
         </div>
       </section>
-    </div>
+    </main>
   );
 };
 
