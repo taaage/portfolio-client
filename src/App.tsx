@@ -5,7 +5,6 @@ import DesignSystem from "./components/DesignSystem/DesignSystem";
 import GearCalculator from "./components/GearCalculator/GearCalculator";
 import Hero from "./components/Hero/Hero";
 import Resume from "./components/Resume/Resume";
-import Strava from "./components/Strava/Strava";
 import StravaDashboard from "./components/StravaDashboard/StravaDashboard";
 import Work from "./components/Work/Work";
 import HomeAssistant from "./components/HomeAssistant/HomeAssistant";
@@ -36,17 +35,16 @@ const App = () => {
             featureFlags.books ? (
               <Books />
             ) : (
-              <ComingSoon title="Lowes Book Library 📚" />
-            )
-          }
-        />
-        <Route
-          path="/strava-descriptions"
-          element={
-            featureFlags.strava ? (
-              <Strava />
-            ) : (
-              <ComingSoon title="Strava AI Descriptions 🤖" />
+              <ComingSoon
+                title="Lowes Book Library"
+                eyebrow="Family project"
+                description="A small family library for tracking books, ratings, and comments."
+                highlights={[
+                  "Browse the collection",
+                  "Rate books and add comments",
+                  "Add, update, and remove books",
+                ]}
+              />
             )
           }
         />

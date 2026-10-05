@@ -51,15 +51,6 @@ const Work = () => {
       wip: true,
     },
     {
-      title: "Strava AI Descriptions",
-      description:
-        "Automatically generates AI-powered descriptions for Strava activities using webhooks and Google Gemini.",
-      stack: "Next.js · Google Gemini",
-      to: "/strava-descriptions",
-      year: "2026",
-      category: "AI integration",
-    },
-    {
       title: "Lowes Book Library",
       description:
         "A book library app with ratings, comments, and CRUD operations. Built for my son Lowe.",

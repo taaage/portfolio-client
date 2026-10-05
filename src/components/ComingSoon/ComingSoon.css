@@ -1,0 +1,89 @@
+.coming-soon-page {
+  width: min(100% - 3rem, 1120px);
+  max-width: none;
+  margin: 0 auto;
+  padding: 9rem 0 7rem;
+}
+
+.coming-soon-kicker {
+  margin: 0 0 0.8rem;
+  color: var(--color-accent);
+  font-size: 0.76rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.coming-soon-page h1 {
+  max-width: 100%;
+  margin: 0;
+  color: var(--color-text-bright);
+  font-size: clamp(2.5rem, 7vw, 5rem);
+  font-weight: 700;
+  line-height: 1.05;
+  overflow-wrap: anywhere;
+}
+
+.coming-soon-page h1 span {
+  color: var(--color-accent);
+}
+
+.coming-soon-description {
+  max-width: 640px;
+  margin: 1.2rem 0 0;
+  color: var(--color-text);
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.coming-soon-highlights {
+  max-width: 640px;
+  margin: 2rem 0 0;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid var(--color-border-subtle);
+}
+
+.coming-soon-highlights li {
+  position: relative;
+  padding: 0.9rem 0 0.9rem 1.25rem;
+  color: var(--color-text-bright);
+  border-bottom: 1px solid var(--color-border-subtle);
+  line-height: 1.5;
+}
+
+.coming-soon-highlights li::before {
+  position: absolute;
+  top: 1.55rem;
+  left: 0;
+  width: 0.35rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: var(--color-accent);
+  content: "";
+}
+
+.coming-soon-status {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  margin: 2rem 0 0;
+  color: var(--color-text-muted);
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.coming-soon-status span {
+  width: 0.5rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: var(--color-accent);
+  box-shadow: 0 0 14px var(--color-accent-border-strong);
+}
+
+@media (max-width: 720px) {
+  .coming-soon-page {
+    width: min(100% - 2rem, 1120px);
+    padding: 8rem 0 5rem;
+  }
+}
