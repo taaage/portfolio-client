@@ -13,8 +13,8 @@ const Hero = () => {
     <header className="section-hero" aria-labelledby="hero-title">
       <p className="hero-kicker"><span /> Software engineer · Stockholm, Sweden</p>
       <h1 id="hero-title" className="hero-title">Tigge Nilsson<span>.</span></h1>
-      <p className="hero-lede">I build thoughtful digital products, from polished React interfaces to the systems behind them.</p>
-      <p className="hero-copy">I care about clear UX, accessibility, and making useful things that feel good to use.</p>
+      <p className="hero-lede">I build thoughtful digital products, from polished React interfaces to the systems behind them, AI native.</p>
+      <p className="hero-copy">I care about clear UX, and making useful things that feel good to use.</p>
       <div className="hero-actions">
         <a className="hero-primary-action" href="#projects">Explore selected work <span aria-hidden="true">↓</span></a>
         <Link className="hero-secondary-action" to="/resume">View CV <span aria-hidden="true">↗</span></Link>
