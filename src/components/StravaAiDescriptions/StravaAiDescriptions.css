@@ -1,0 +1,123 @@
+.strava-ai-page {
+  width: min(100% - 3rem, 1120px);
+  margin: 0 auto;
+  padding: 9rem 0 5rem;
+}
+
+.strava-ai-heading {
+  max-width: 780px;
+  padding-bottom: 4rem;
+}
+
+.strava-ai-kicker {
+  margin: 0 0 1rem;
+  color: var(--color-accent);
+  font-size: 0.76rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.strava-ai-heading h1 {
+  margin: 0;
+  color: var(--color-text-bright);
+  font-size: clamp(2.6rem, 7vw, 5rem);
+  font-weight: 700;
+  line-height: 1.03;
+}
+
+.strava-ai-heading h1 span {
+  color: var(--color-accent);
+}
+
+.strava-ai-intro {
+  max-width: 620px;
+  margin: 1.25rem 0 0;
+  color: var(--color-text);
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.strava-ai-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem 1.5rem;
+  margin-top: 1.8rem;
+}
+
+.strava-ai-actions a {
+  color: var(--color-text-bright);
+  font-size: 0.88rem;
+  font-weight: 600;
+  text-decoration-color: var(--color-accent);
+  text-underline-offset: 0.25em;
+}
+
+.strava-ai-actions a span {
+  color: var(--color-accent);
+}
+
+.strava-ai-setup {
+  display: grid;
+  grid-template-columns: minmax(220px, 0.65fr) minmax(0, 1fr);
+  gap: 3rem;
+  padding: 2rem 0;
+  border-top: 1px solid var(--color-border-subtle);
+  border-bottom: 1px solid var(--color-border-subtle);
+}
+
+.strava-ai-section-heading h2 {
+  margin: 0;
+  color: var(--color-text-bright);
+  font-size: 1.35rem;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.strava-ai-setup ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.strava-ai-setup li {
+  display: grid;
+  grid-template-columns: 2.5rem minmax(0, 1fr);
+  gap: 0.75rem;
+  padding: 0.9rem 0;
+  border-top: 1px solid var(--color-border-subtle);
+}
+
+.strava-ai-setup li:first-child {
+  padding-top: 0;
+  border-top: 0;
+}
+
+.strava-ai-setup li > span {
+  color: var(--color-accent);
+  font-size: 0.75rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.strava-ai-setup li p {
+  margin: 0;
+  color: var(--color-text);
+  line-height: 1.6;
+}
+
+.strava-ai-footer {
+  padding-top: 1.2rem;
+  color: var(--color-text-muted);
+  font-size: 0.75rem;
+}
+
+@media (max-width: 720px) {
+  .strava-ai-page {
+    width: min(100% - 2rem, 1120px);
+    padding: 8rem 0 4rem;
+  }
+
+  .strava-ai-setup {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+}

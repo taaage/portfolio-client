@@ -5,6 +5,7 @@ import DesignSystem from "./components/DesignSystem/DesignSystem";
 import GearCalculator from "./components/GearCalculator/GearCalculator";
 import Hero from "./components/Hero/Hero";
 import Resume from "./components/Resume/Resume";
+import StravaAiDescriptions from "./components/StravaAiDescriptions/StravaAiDescriptions";
 import StravaDashboard from "./components/StravaDashboard/StravaDashboard";
 import Work from "./components/Work/Work";
 import HomeAssistant from "./components/HomeAssistant/HomeAssistant";
@@ -60,6 +61,10 @@ const App = () => {
         />
         <Route path="/gear-calculator" element={<GearCalculator />} />
         <Route path="/strava-dashboard" element={<StravaDashboard />} />
+        <Route
+          path="/strava-ai-descriptions"
+          element={<StravaAiDescriptions />}
+        />
         <Route path="/design-system" element={<DesignSystem />} />
       </Routes>
     </BrowserRouter>

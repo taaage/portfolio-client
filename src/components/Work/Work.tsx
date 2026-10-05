@@ -42,6 +42,16 @@ const Work = () => {
       category: "Data visualization",
     },
     {
+      title: "Strava AI Descriptions",
+      description:
+        "A self-hostable Gemini service for writing configurable descriptions from Strava activity data.",
+      stack: "Next.js · Gemini · Strava API",
+      to: "/strava-ai-descriptions",
+      year: "2026",
+      category: "Cycling automation",
+      wip: true,
+    },
+    {
       title: "Home Assistant",
       description: "Smart home automation and custom integrations.",
       stack: "Docker · Philips Hue",
